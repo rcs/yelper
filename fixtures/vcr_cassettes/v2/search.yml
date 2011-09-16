@@ -1,0 +1,1027 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?location=San%20Francisco
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="46286930830597275e6031d0c7c29b94",
+        oauth_signature="AUyWoretJdOyHBc%2FAHw2MTBtFcI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133544", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:00 GMT
+      server:
+      - Apache
+      x-node:
+      - web2, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb1
+    body: ! '{"region":{"span":{"latitude_delta":0.09171876999999995,"longitude_delta":0.10607761999997933},"center":{"latitude":37.755986250000007,"longitude":-122.43588389999999}},"total":34283,"businesses":[{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/26AwvtlzY7EFEgfQeOnsSw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":54,"name":"EMF
+      Insurance Agency","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/emf-insurance-agency-san-francisco","snippet_text":"Erin
+      is incredibly responsive and tenacious. I had a pre-existing condition that
+      insurance companies reflexively use to deny coverage or raise rates....","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/e9NYfrxSDygrNR3uebG5fA/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/phh6HOm-sI6q7xxaQks3Iw/ms.jpg","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"emf-insurance-agency-san-francisco","categories":[["Insurance","insurance"]],"location":{"city":"San
+      Francisco","display_address":["Inner Sunset","San Francisco, CA 94122"],"geo_accuracy":5,"neighborhoods":["Inner
+      Sunset"],"postal_code":"94122","country_code":"US","address":[],"coordinate":{"latitude":37.759748100000003,"longitude":-122.47502919999999},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/Kp6qJnoW0GsqZyAXGWGbUw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":75,"name":"Excalibur
+      Water Heaters","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/excalibur-water-heaters-san-francisco","phone":"4157255445","snippet_text":"We
+      are really big fans of the tankless water heater concept and consider ourselves
+      early adopters here in the US.  The technology is certainly not new as it...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/fOYeR4ugMmU5HoeHdDpFlw/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/CcxkOvByUg3GGE_S9uHf1g/ms.jpg","display_phone":"+1-415-725-5445","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"excalibur-water-heaters-san-francisco","categories":[["Plumbing","plumbing"]],"location":{"cross_streets":"Beeman
+      Ln & Somerset St","city":"San Francisco","display_address":["3970 San Bruno
+      Ave","(b/t Beeman Ln & Somerset St)","Visitacion Valley","San Francisco, CA
+      94134"],"geo_accuracy":8,"neighborhoods":["Visitacion Valley"],"postal_code":"94134","country_code":"US","address":["3970
+      San Bruno Ave"],"coordinate":{"latitude":37.714295900000003,"longitude":-122.4021065},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/yTxI-g-Bi3mSfMBxJ4gOzw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":40,"name":"Body
+      Mechanix","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/body-mechanix-san-francisco-2","phone":"8776584757","snippet_text":"My
+      SO and I have been doing couples training with JEN MARSHALL for several months.  Even
+      though we have different levels of physical fitness, Jen does a...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/rUbvvrur__tc3ynpydiJPw/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/xB4KDuuep_i27KWqYiPpxg/ms.jpg","display_phone":"+1-877-658-4757","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"body-mechanix-san-francisco-2","categories":[["Trainers","healthtrainers"],["Chiropractors","chiropractors"]],"location":{"city":"San
+      Francisco","display_address":["219 Brannan St and Delancey","Ste a","SOMA","San
+      Francisco, CA 94107"],"geo_accuracy":7,"neighborhoods":["SOMA"],"postal_code":"94107","country_code":"US","address":["219
+      Brannan St and Delancey","Ste a"],"coordinate":{"latitude":37.783608999999998,"longitude":-122.38984600000001},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/nS6Z7y0JOMjyFEIkAPl1_w","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":62,"name":"Val
+      Cunningham","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/val-cunningham-san-francisco","phone":"4158463154","snippet_text":"(this
+      is a lengthy review from a guys point of view, with a happy ending) \nwe wanted
+      to make our first dance memorable.  we knew that instead of a...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/QVocHIQaXeWsfIkUnHyXAg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/wYeRKI4fUH7AslaDAz-mhw/ms.jpg","display_phone":"+1-415-846-3154","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"val-cunningham-san-francisco","categories":[["Dance
+      Schools","dance_schools"]],"location":{"cross_streets":"Illinois St & 3rd St","city":"San
+      Francisco","display_address":["610 22nd St","Ste 311","(b/t Illinois St & 3rd
+      St)","Potrero Hill","San Francisco, CA 94107"],"geo_accuracy":8,"neighborhoods":["Potrero
+      Hill"],"postal_code":"94107","country_code":"US","address":["610 22nd St","Ste
+      311"],"coordinate":{"latitude":37.758077800000002,"longitude":-122.38766680000001},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/OPkRIITFVlx0uh61hMRI9Q","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":47,"name":"Lydia
+      Daniller Photography","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/lydia-daniller-photography-san-francisco","phone":"4154209311","snippet_text":"Can''t
+      recommend Lydia highly enough.  She was amazing.\n\nTo be honest, I wasn''t
+      totally concerned about all the tiny details of the wedding.  But one thing
+      I...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/folRHkoGptjS7VQtMvVAKg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/d_GZNqwvlZvnPIwL8j0R9w/ms.jpg","display_phone":"+1-415-420-9311","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"lydia-daniller-photography-san-francisco","categories":[["Photographers","photographers"]],"location":{"city":"San
+      Francisco","display_address":["SOMA","San Francisco, CA 94103"],"geo_accuracy":5,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":[],"coordinate":{"latitude":37.772640199999998,"longitude":-122.4099154},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/NbZUWBk3aMyeWtN3G1OHGw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":58,"name":"Chris''
+      Discount Muffler","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/chris-discount-muffler-san-francisco","phone":"4158634110","snippet_text":"These
+      guys are seriously like your big brothers who will make it safe.\n\nSomeone
+      ran a red light and totaled my car a couple months ago and when I was going...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/d_o4NfsYVf3IscW96suLEw/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/nd_S2tNSjih8x5FN8jhIMg/ms.jpg","display_phone":"+1-415-863-4110","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"chris-discount-muffler-san-francisco","categories":[["Auto
+      Repair","autorepair"]],"location":{"cross_streets":"Burns Pl & Folsom St","city":"San
+      Francisco","display_address":["276 11th St","(b/t Burns Pl & Folsom St)","SOMA","San
+      Francisco, CA 94103"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":["276
+      11th St"],"coordinate":{"latitude":37.772005999999998,"longitude":-122.414783},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/47Ofo1LYsTBsgT7rXgKpDw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":35,"name":"Jon
+      Casey Caricatures","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/jon-casey-caricatures-san-francisco","phone":"8043573398","snippet_text":"Jon
+      sketched caricatures of honorees recognized at our awards ceremony. He drew
+      the portraits before the event referencing photos we provided, then emailed...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/VpI_De0cs-NXkmFaDPC5Jg/ms.jpg","snippet_image_url":"http://media3.px.yelpcdn.com/static/201012161986305257/img/gfx/blank_user_medium.gif","display_phone":"+1-804-357-3398","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"jon-casey-caricatures-san-francisco","categories":[["Arts
+      & Entertainment","arts"]],"location":{"city":"San Francisco","display_address":["SOMA","San
+      Francisco, CA 94103"],"geo_accuracy":5,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":[],"coordinate":{"latitude":37.772640199999998,"longitude":-122.4099154},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/TViiYB07gYHCqbcg5Fo1Lw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":44,"name":"Flourish
+      Skin & Wax","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/flourish-skin-and-wax-san-francisco","phone":"4153706559","snippet_text":"Andrea
+      is fantastic! Her easy going personality would make any client feel instantly
+      relaxed. It''s hard to imagine that a waxing experience could ever be...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/x-A84rL2E9kSfbrMXZHgcg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/oDvfYkQeQMgTt9pUE3d1KQ/ms.jpg","display_phone":"+1-415-370-6559","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"flourish-skin-and-wax-san-francisco","categories":[["Skin
+      Care","skincare"],["Hair Removal","hairremoval"]],"location":{"cross_streets":"Laguna
+      St & Charlton Ct","city":"San Francisco","display_address":["1905 Union St","(b/t
+      Laguna St & Charlton Ct)","Marina/Cow Hollow","San Francisco, CA 94123"],"geo_accuracy":8,"neighborhoods":["Marina/Cow
+      Hollow"],"postal_code":"94123","country_code":"US","address":["1905 Union St"],"coordinate":{"latitude":37.797676600000003,"longitude":-122.4307453},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/3UaEoZm196xFfUlQY1bRSw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":41,"name":"Glenda
+      Pongiglione","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/glenda-pongiglione-san-francisco-2","phone":"4152822161","snippet_text":"Glenda
+      is AMAZING!\n\nI bought my wedding dress, from another girl who had used Glenda
+      for her alterations. \n\nGlenda was so sweet, she made an exception for...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/APDbWMxbkGQ_vp3ZeFntkA/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/YzdTr_9RL3Fz-4t4mMPbqg/ms.jpg","display_phone":"+1-415-282-2161","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"glenda-pongiglione-san-francisco-2","categories":[["Sewing
+      & Alterations","sewingalterations"]],"location":{"city":"San Francisco","display_address":["Mission","San
+      Francisco, CA 94110"],"geo_accuracy":5,"neighborhoods":["Mission"],"postal_code":"94110","country_code":"US","address":[],"coordinate":{"latitude":37.748582399999997,"longitude":-122.4184108},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/E9T2ivuklyWmz5awa0klXw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":39,"name":"Under
+      Glass Custom Framing & Gallery","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/under-glass-custom-framing-and-gallery-san-francisco","phone":"4152529844","snippet_text":"Under
+      Glass does an amazing job with every framing job I''ve ever brought in. Mattias,
+      the owner, has an extremely sharp eye and often shows me frames that I...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/-0Acsbu6dztIkpbydhYyCg/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/JApH_vL1mee9e2ERdaCBlw/ms.jpg","display_phone":"+1-415-252-9844","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"under-glass-custom-framing-and-gallery-san-francisco","categories":[["Framing","framing"]],"location":{"cross_streets":"Market
+      St & 15th St","city":"San Francisco","display_address":["268 Church St","(b/t
+      Market St & 15th St)","Castro","San Francisco, CA 94114"],"geo_accuracy":8,"neighborhoods":["Castro"],"postal_code":"94114","country_code":"US","address":["268
+      Church St"],"coordinate":{"latitude":37.766391800000001,"longitude":-122.42887020000001},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/XxXQdnyIdXKQiDDffLr7Ng","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":50,"name":"Too
+      Good Auto Body Repair","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/too-good-auto-body-repair-san-francisco","phone":"4154411312","snippet_text":"Driving
+      in San Francisco your car is going to going to get nicked and bruised whether
+      its while parallel parking, getting side swiped by a tourist, or in my...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/V3ePJjLfUgGuoiROz52QtA/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/qt_0Y8UjaaPc6b0QmasG5Q/ms.jpg","display_phone":"+1-415-441-1312","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"too-good-auto-body-repair-san-francisco","categories":[["Auto
+      Repair","autorepair"],["Body Shops","bodyshops"]],"location":{"cross_streets":"Franklin
+      St & Gough St","city":"San Francisco","display_address":["1710 Pine St","(b/t
+      Franklin St & Gough St)","Pacific Heights","San Francisco, CA 94109"],"geo_accuracy":8,"neighborhoods":["Pacific
+      Heights"],"postal_code":"94109","country_code":"US","address":["1710 Pine St"],"coordinate":{"latitude":37.789185000000003,"longitude":-122.4239529},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/7-CxFsXZBGGCiYlW-NYKFw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":30,"name":"The
+      House Doctor","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/the-house-doctor-san-francisco-4","phone":"4158345364","snippet_text":"Dr.
+      Davis is a GREAT alternative to having to go to Urgent Care or the Emergency
+      Room if and when your primary care doctor can''t see you on short, a.k.a.,...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/oZBJAHaiFmLC87vqBdhWsQ/ms.jpg","snippet_image_url":"http://media3.px.yelpcdn.com/static/201012161986305257/img/gfx/blank_user_medium.gif","display_phone":"+1-415-834-5364","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"the-house-doctor-san-francisco-4","categories":[["Family
+      Practice","familydr"],["Urgent Care","urgent_care"],["Internal Medicine","internalmed"]],"location":{"cross_streets":"22nd
+      St & Humboldt St","city":"San Francisco","display_address":["1017 Kansas St","(b/t
+      22nd St & Humboldt St)","Potrero Hill","San Francisco, CA 94107"],"geo_accuracy":8,"neighborhoods":["Potrero
+      Hill"],"postal_code":"94107","country_code":"US","address":["1017 Kansas St"],"coordinate":{"latitude":37.756770000000003,"longitude":-122.4027557},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/QbntYTJ08y3ioqhd2HgZNQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":35,"name":"Mission
+      Bay Community Church","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/mission-bay-community-church-san-francisco","phone":"4157874751","snippet_text":"In
+      my quest to find a church to call home, I looked at 4-5 churches. The search
+      was frustrating, comical and even sad at times. I could have never imagined...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/Dpc4QTSIKl-u7RORZjkNSw/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/6cCoBBvt7dcMYaJggXp4ww/ms.jpg","display_phone":"+1-415-787-4751","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"mission-bay-community-church-san-francisco","categories":[["Churches","churches"]],"location":{"cross_streets":"Mission
+      St & Persia Ave","city":"San Francisco","display_address":["32 Ocean Ave","(b/t
+      Mission St & Persia Ave)","Mission Terrace","San Francisco, CA 94112"],"geo_accuracy":8,"neighborhoods":["Mission
+      Terrace"],"postal_code":"94112","country_code":"US","address":["32 Ocean Ave"],"coordinate":{"latitude":37.724114999999998,"longitude":-122.436168},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/jVaYlRt3d44z6Z1h4JuXVQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":45,"name":"Chiro-Health","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/chiro-health-san-francisco-2","phone":"4155461461","snippet_text":"Finding
+      a good chiropractor is hard!!!  I''ve searched the city high and low, and was
+      SO happy to have found Dr. Dakoji.  \n\nLike a great masseuse, she...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/H03H183kUUKGJZXO56DeHQ/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/on3ENjzAJAL7Lp1SmHFVMg/ms.jpg","display_phone":"+1-415-546-1461","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"chiro-health-san-francisco-2","categories":[["Chiropractors","chiropractors"],["Massage","massage"],["Sports
+      Medicine","sportsmed"]],"location":{"cross_streets":"3rd St & Kearny St","city":"San
+      Francisco","display_address":["703 Market St","Ste 1214","(b/t 3rd St & Kearny
+      St)","Union Square","San Francisco, CA 94103"],"geo_accuracy":8,"neighborhoods":["Union
+      Square","SOMA"],"postal_code":"94103","country_code":"US","address":["703 Market
+      St","Ste 1214"],"coordinate":{"latitude":37.787225300000003,"longitude":-122.40357},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/X52gq07cFLQQhyUuVsLjvw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":50,"name":"Honeybee
+      Acupuncture","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/honeybee-acupuncture-san-francisco","phone":"4153509024","snippet_text":"Honeybee
+      was my first experience with acupuncture, and it went great. Sterility is good,
+      with one use needles and alcohol applied first. A VERY calm and...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/fFhFRTv4ra4uxwHSM7oQ2A/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/nMJIjkkuTVFBt6KzF0cdmQ/ms.jpg","display_phone":"+1-415-350-9024","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"honeybee-acupuncture-san-francisco","categories":[["Acupuncture","acupuncture"]],"location":{"cross_streets":"18th
+      St & 19th St","city":"San Francisco","display_address":["766 Valencia St","Unit
+      2B","(b/t 18th St & 19th St)","Mission","San Francisco, CA 94110"],"geo_accuracy":9,"neighborhoods":["Mission"],"postal_code":"94110","country_code":"US","address":["766
+      Valencia St","Unit 2B"],"coordinate":{"latitude":37.7608424242678,"longitude":-122.421898841858},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/nPHo1Ql9AKtCsXfl-QSbdA","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":82,"name":"Alisha
+      Valverde Medical Skin Aesthetics","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/alisha-valverde-medical-skin-aesthetics-san-francisco","phone":"4158473340","snippet_text":"My
+      skin, like my hair is a f***ing disaster most of the time. Lots of people just
+      get to roll out of bed, run a comb though their hair, put on some chap...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/r7JzjdvekXCyQVMDzlC1Tg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/4BvqehBgWRMnsInHsWMUNg/ms.jpg","display_phone":"+1-415-847-3340","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"alisha-valverde-medical-skin-aesthetics-san-francisco","categories":[["Skin
+      Care","skincare"],["Cosmetics & Beauty Supply","cosmetics"],["Hair Removal","hairremoval"]],"location":{"cross_streets":"Powell
+      St & Mason St","city":"San Francisco","display_address":["490 Post St","Ste
+      1509","(b/t Powell St & Mason St)","Civic Center/Tenderloin","San Francisco,
+      CA 94102"],"geo_accuracy":8,"neighborhoods":["Civic Center/Tenderloin","Union
+      Square"],"postal_code":"94102","country_code":"US","address":["490 Post St","Ste
+      1509"],"coordinate":{"latitude":37.788267300000001,"longitude":-122.4098472},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/BgbFmHSMa1lZiRj-Om1zUA","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":63,"name":"Tim
+      Gullicksen","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/tim-gullicksen-san-francisco-2","phone":"4153705277","snippet_text":"Partner
+      and I are really young and when it came time to look at the purchasing options
+      for us in SF, we immediately turned to Tim for assistance. He was so...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/LWXYlgPn58jOhdmXTmDSBQ/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/bN1B3ToJ2KGkDXdky-e6qg/ms.jpg","display_phone":"+1-415-370-5277","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"tim-gullicksen-san-francisco-2","categories":[["Real
+      Estate Agents","realestateagents"]],"location":{"city":"San Francisco","display_address":["Zephyr
+      Real Estate","2523 California St","Pacific Heights","San Francisco, CA 94115"],"geo_accuracy":8,"neighborhoods":["Pacific
+      Heights"],"postal_code":"94115","country_code":"US","address":["Zephyr Real
+      Estate","2523 California St"],"coordinate":{"latitude":37.788593200000001,"longitude":-122.43616419999999},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/IGyZWYWxxXVVec0rb99jzQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":77,"name":"Level
+      6 Shredding","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/level-6-shredding-san-francisco-2","phone":"4153411003","snippet_text":"For
+      years I had old papers taking up valuable space in my bedroom closet, but no
+      longer thanks to Matt Murphy and his team at Level 6 Shredding.\n\nThey came...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/Bajq1NnYj4queV8aoEglzw/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/bTwPkjPiGTRO2JlEG5Yvog/ms.jpg","display_phone":"+1-415-341-1003","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"level-6-shredding-san-francisco-2","categories":[["Local
+      Services","localservices"]],"location":{"cross_streets":"18th St & 19th St","city":"San
+      Francisco","display_address":["139 Collingwood St","Ste A","(b/t 18th St & 19th
+      St)","Castro","San Francisco, CA 94114"],"geo_accuracy":8,"neighborhoods":["Castro"],"postal_code":"94114","country_code":"US","address":["139
+      Collingwood St","Ste A"],"coordinate":{"latitude":37.760154100000001,"longitude":-122.4360418},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/bgC9VlfCgbWkA0NM8gIjDQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":33,"name":"Jason
+      Gee - Farmers Insurance","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/jason-gee---farmers-insurance-san-francisco","phone":"4155662822","snippet_text":"Jason
+      Gee - Farmers Ins has been my agent for over 13 years.\nHe has gone above and
+      beyond as a insurance agent.\nHe now also insures my relatives and all...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/lZ5bh8bVkqo3Yj3ksn05QQ/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/biE0jdgNsYkE1bAxVKxK9w/ms.jpg","display_phone":"+1-415-566-2822","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"jason-gee---farmers-insurance-san-francisco","categories":[["Insurance","insurance"]],"location":{"cross_streets":"24th
+      Ave & 25th Ave","city":"San Francisco","display_address":["2308 Clement St","(b/t
+      24th Ave & 25th Ave)","Outer Richmond","San Francisco, CA 94121"],"geo_accuracy":8,"neighborhoods":["Outer
+      Richmond"],"postal_code":"94121","country_code":"US","address":["2308 Clement
+      St"],"coordinate":{"latitude":37.782302999999999,"longitude":-122.484101},"state_code":"CA"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/zWSf5FEWPQKhTI9d40-uMA","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":35,"name":"Jordan''s
+      Kitchen","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/jordans-kitchen-san-francisco","phone":"4157100761","snippet_text":"I
+      was looking for a fun activity for my boyfriend''s birthday; he loves to cook,
+      so what''s better than a cooking class? There are quite a few options out...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/dpTPPCYyuED6y1nXXCpwKA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/DHoFZoC-u9AWzLW5uJricg/ms.jpg","display_phone":"+1-415-710-0761","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"jordans-kitchen-san-francisco","categories":[["Personal
+      Chefs","personalchefs"],["Caterers","catering"],["Cooking Schools","cookingschools"]],"location":{"city":"San
+      Francisco","display_address":["Potrero Hill","San Francisco, CA 94107"],"geo_accuracy":5,"neighborhoods":["Potrero
+      Hill"],"postal_code":"94107","country_code":"US","address":[],"coordinate":{"latitude":37.7618242,"longitude":-122.3985871},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?term=food&location=San%20Francisco
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="2a77fd0dd9a60486cb2a0df41ed210a3",
+        oauth_signature="EgZwW8yvoRmt5ATFiLK%2BCTVyDA0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133545", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:01 GMT
+      server:
+      - Apache
+      x-node:
+      - web41, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb1
+    body: ! '{"region":{"span":{"latitude_delta":0.091083850000003963,"longitude_delta":0.079639999999983502},"center":{"latitude":37.765837750000003,"longitude":-122.431438}},"total":10371,"businesses":[{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/WavvLdfdP6g8aZTtbBQHTw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":2761,"name":"Gary
+      Danko","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/gary-danko-san-francisco","phone":"4157492060","snippet_text":"ah...GD,
+      we meet again.. =)\n\njust looked at my old review...according to that one,
+      i was almost exactly a year ago.  we knew we were coming here since i...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/lansxaYjxNSWAEuDSUl-NA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/L1aFoWLpfWvBd_HafdXC5A/ms.jpg","display_phone":"+1-415-749-2060","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"gary-danko-san-francisco","categories":[["American
+      (New)","newamerican"]],"location":{"city":"San Francisco","display_address":["800
+      N Point St","Fisherman''s Wharf","San Francisco, CA 94109"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94109","country_code":"US","address":["800 N Point St"],"coordinate":{"latitude":37.805774999999997,"longitude":-122.420558},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/Awdtc2yS8hvgs6djdX6xFg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":26,"name":"Off
+      the Grid: 5M","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/off-the-grid-5m-san-francisco","snippet_text":"Long
+      lines and large crowds freak me out. I think have a weird type of claustrophobia.
+      Because of this, I still haven''t experienced the mother of all OTG''s,...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/1YkkjirU6KIya-kaL2ltvg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/GEoxhhpLad-zO6gDibxMrA/ms.jpg","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"off-the-grid-5m-san-francisco","categories":[["Food
+      Stands","foodstands"],["Specialty Food","gourmet"]],"location":{"city":"San
+      Francisco","display_address":["Minna St & 5th St","SOMA","San Francisco, CA
+      94103"],"geo_accuracy":7,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":["Minna
+      St & 5th St"],"coordinate":{"latitude":37.782295900000001,"longitude":-122.405931},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/bUr4iq2mKKiBOu2HKynylg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":378,"name":"HRD
+      Coffee Shop","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/hrd-coffee-shop-san-francisco","phone":"4155432355","snippet_text":"Came
+      here on Sat and there was a short line out the door.  Heard about this place
+      from  the show Diners, Drive-ins and Dives.  \n\nAnyhow, BF and I ordered...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/DAsPBvjjRg4hEg-GANlsYQ/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/NQcymlXxwMlUzPMZktyVog/ms.jpg","display_phone":"+1-415-543-2355","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"hrd-coffee-shop-san-francisco","categories":[["Coffee
+      & Tea","coffee"],["Korean","korean"]],"location":{"cross_streets":"Bryant St
+      & Taber Aly","city":"San Francisco","display_address":["521 3rd St","Ste A","(b/t
+      Bryant St & Taber Aly)","SOMA","San Francisco, CA 94107"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94107","country_code":"US","address":["521
+      3rd St","Ste A"],"coordinate":{"latitude":37.781151000000001,"longitude":-122.39523800000001},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/PsY5DMHxa5iNX_nX0T-qPA","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":1675,"name":"Kokkari
+      Estiatorio","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/kokkari-estiatorio-san-francisco-2","phone":"4159810983","snippet_text":"it
+      just doesn''t get better than this place\n\nthe spreads are like crack\n\ngreat
+      wine list\n\namazing food - lamb riblets, whole grilled fish, grilled...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/q79Az8osDxYXxJZXv-3eCg/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/wgd_J9G1pCehSuOD2nUKsA/ms.jpg","display_phone":"+1-415-981-0983","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"kokkari-estiatorio-san-francisco-2","categories":[["Greek","greek"],["Mediterranean","mediterranean"]],"location":{"cross_streets":"Front
+      St & Battery St","city":"San Francisco","display_address":["200 Jackson St","(b/t
+      Front St & Battery St)","Financial District","San Francisco, CA 94111"],"geo_accuracy":8,"neighborhoods":["Financial
+      District"],"postal_code":"94111","country_code":"US","address":["200 Jackson
+      St"],"coordinate":{"latitude":37.7970191,"longitude":-122.39951790000001},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/s4AmL4XID5jKEbxGUVNPMQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":437,"name":"Assab
+      Eritrean Restaurant","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/assab-eritrean-restaurant-san-francisco","phone":"4154417083","snippet_text":"One
+      chilly summer evening, my friend Cindy and I headed over to quite possibly one
+      of the last Eritrean restaurant in SF that we haven''t tried.  I love...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/k9h8j4y_fxLruoTzWLjG5Q/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/NNQv1YnsMKXilYLaB_ebRg/ms.jpg","display_phone":"+1-415-441-7083","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"assab-eritrean-restaurant-san-francisco","categories":[["Ethiopian","ethiopian"]],"location":{"cross_streets":"Wood
+      St & Collins St","city":"San Francisco","display_address":["2845 Geary Blvd","(b/t
+      Wood St & Collins St)","Laurel Heights","San Francisco, CA 94118"],"geo_accuracy":8,"neighborhoods":["Laurel
+      Heights","Western Addition/NOPA"],"postal_code":"94118","country_code":"US","address":["2845
+      Geary Blvd"],"coordinate":{"latitude":37.782142999999998,"longitude":-122.4498779},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/BEZY-wdn8fdUX6GQ21bfbw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":132,"name":"Chef
+      Ryan Scott''s 3-SUM Eats Food Truck","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/chef-ryan-scotts-3-sum-eats-food-truck-san-francisco","snippet_text":"Stopped
+      by here at Off the Grid Fort Mason a couple of weeks ago. I ordered the Mac
+      n Cheese eggrolls, they are served with a side of fondue dipping...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/e0vPHouEX2f1jsd72Xjx1Q/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/XqQaGcMSNvJz6cx3-Da6nA/ms.jpg","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"chef-ryan-scotts-3-sum-eats-food-truck-san-francisco","categories":[["Food
+      Stands","foodstands"],["Soul Food","soulfood"]],"location":{"cross_streets":"Palou
+      Ave & Oakdale Ave","city":"San Francisco","display_address":["425 Barneveld
+      Ave","(b/t Palou Ave & Oakdale Ave)","Bayview/Hunters Point","San Francisco,
+      CA 94124"],"geo_accuracy":8,"neighborhoods":["Bayview/Hunters Point"],"postal_code":"94124","country_code":"US","address":["425
+      Barneveld Ave"],"coordinate":{"latitude":37.740771000000002,"longitude":-122.40379900000001},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/lJAGnYzku5zSaLnQ_T6_GQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":2223,"name":"Brenda''s
+      French Soul Food","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/brendas-french-soul-food-san-francisco","phone":"4153458100","snippet_text":"I''m
+      from the South and I can say their crawfish beignets and cheesy grits might
+      just be better than some i''ve had in the South. \n\nMy boyfriend and I come...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/9fpwRXGc886-i63VHKvudA/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/k0k7NtGTuTbkbdyqoZWqlg/ms.jpg","display_phone":"+1-415-345-8100","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"brendas-french-soul-food-san-francisco","categories":[["Cajun/Creole","cajun"],["Breakfast
+      & Brunch","breakfast_brunch"],["Soul Food","soulfood"]],"location":{"cross_streets":"Turk
+      St & Eddy St","city":"San Francisco","display_address":["652 Polk St","(b/t
+      Turk St & Eddy St)","Civic Center/Tenderloin","San Francisco, CA 94102"],"geo_accuracy":8,"neighborhoods":["Civic
+      Center/Tenderloin"],"postal_code":"94102","country_code":"US","address":["652
+      Polk St"],"coordinate":{"latitude":37.782891800000002,"longitude":-122.4189883},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/DGyoVB9PdI9_jw0CNi_OPg","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":1827,"name":"Suppenk\u00fcche","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/suppenkuche-san-francisco","phone":"4152529289","snippet_text":"This
+      is the definitive German food experience stateside. This place has been open
+      for 18 years! How many places can say that? I''ve been going there for...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/Xj817E9D-O-p54aQJMzTaA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/6vV_gnEev6s1Hlp-xXsJIg/ms.jpg","display_phone":"+1-415-252-9289","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"suppenkuche-san-francisco","categories":[["German","german"]],"location":{"cross_streets":"Fell
+      St & Hayes St","city":"San Francisco","display_address":["525 Laguna St","(b/t
+      Fell St & Hayes St)","Hayes Valley","San Francisco, CA 94102"],"geo_accuracy":8,"neighborhoods":["Hayes
+      Valley"],"postal_code":"94102","country_code":"US","address":["525 Laguna St"],"coordinate":{"latitude":37.776094999999998,"longitude":-122.426187},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/ttarnopezxmp2ROB1N2PaA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":2440,"name":"NOPA","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/nopa-san-francisco","phone":"4158648643","snippet_text":"I
+      ate goat, and it was awesome.\n\nI had heard only good things about this place
+      so I was excited to try it.  Great atmosphere, very open and social.  Their...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/p6SMBwKBPWDGCJtRthUwBA/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/Fj9viGM64KB16aLszcfupg/ms.jpg","display_phone":"+1-415-864-8643","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"nopa-san-francisco","categories":[["American
+      (New)","newamerican"],["Modern European","modern_european"]],"location":{"cross_streets":"Fell
+      St & Hayes St","city":"San Francisco","display_address":["560 Divisadero St","(b/t
+      Fell St & Hayes St)","Western Addition/NOPA","San Francisco, CA 94117"],"geo_accuracy":8,"neighborhoods":["Western
+      Addition/NOPA"],"postal_code":"94117","country_code":"US","address":["560 Divisadero
+      St"],"coordinate":{"latitude":37.774843199999999,"longitude":-122.437704},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/VaPMLf7sK-GScihdMpJf2Q","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":29,"name":"Chop
+      Sticks Fast Food","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/chop-sticks-fast-food-san-francisco","phone":"4153336336","snippet_text":"Chinese
+      food like your mom used to make--only better!  This hole-in-the-wall place is
+      run by a husband and wife. There are two tables if you really want to...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/RYzbFOcyeRRn7jblCffySA/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/d9kmQ2EHVrWD0hLt5yTczA/ms.jpg","display_phone":"+1-415-333-6336","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"chop-sticks-fast-food-san-francisco","categories":[["Chinese","chinese"],["Fast
+      Food","hotdogs"]],"location":{"cross_streets":"Norton St & San Juan Ave","city":"San
+      Francisco","display_address":["4615 Mission St","(b/t Norton St & San Juan Ave)","Excelsior","San
+      Francisco, CA 94112"],"geo_accuracy":8,"neighborhoods":["Excelsior"],"postal_code":"94112","country_code":"US","address":["4615
+      Mission St"],"coordinate":{"latitude":37.724435999999997,"longitude":-122.435013},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/L5vSeC_sa3TUQW_lticqyA","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":1343,"name":"Chapeau!","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/chapeau-san-francisco","phone":"4157509787","snippet_text":"****Hands
+      down best dinner I''ve had in SF in months!****\n\nI highly recommend getting
+      the 3 course meal that they offer.  But as a warning although its a...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/qEL8G51adkYL3EzFK4JncA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/-OV3d6Wbjl9iLScG1cHL2w/ms.jpg","display_phone":"+1-415-750-9787","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"chapeau-san-francisco","categories":[["French","french"]],"location":{"cross_streets":"2nd
+      Ave & 3rd Ave","city":"San Francisco","display_address":["126 Clement St","(b/t
+      2nd Ave & 3rd Ave)","Inner Richmond","San Francisco, CA 94118"],"geo_accuracy":8,"neighborhoods":["Inner
+      Richmond"],"postal_code":"94118","country_code":"US","address":["126 Clement
+      St"],"coordinate":{"latitude":37.783126799999998,"longitude":-122.4606734},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/XANvY_2W7MR6YTyR8CGzWQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":425,"name":"Aslam''s
+      Rasoi","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/aslams-rasoi-san-francisco","phone":"4156950599","snippet_text":"The
+      food might be four (4) stars at times but it is always tasty and good. I have
+      been here to eat 3 times now.  \n\nThe service is what makes it five (5)...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/PJOrQEg4E_-qGMrYCMAHhA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/2t949zxwBI-zYYKXkbABiQ/ms.jpg","display_phone":"+1-415-695-0599","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"aslams-rasoi-san-francisco","categories":[["Indian","indpak"],["Pakistani","pakistani"]],"location":{"cross_streets":"21st
+      St & Hill St","city":"San Francisco","display_address":["1037 Valencia St","(b/t
+      21st St & Hill St)","Mission","San Francisco, CA 94110"],"geo_accuracy":8,"neighborhoods":["Mission"],"postal_code":"94110","country_code":"US","address":["1037
+      Valencia St"],"coordinate":{"latitude":37.756335,"longitude":-122.42107300000001},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/gsf5yf5HS3h8Z8MHpJ4t3w","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":969,"name":"Cafe
+      Claude","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/cafe-claude-san-francisco","phone":"4153923505","snippet_text":"The
+      best dish I have ever had, I kept hushing my date because he was interrupting
+      the mental orgasm I was having from Chef Michelle''s food at Cafe Claude....","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/RDFjSlbM9D-M9jmE_Vft7A/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/AehN_qlg7ohV41i783eUUg/ms.jpg","display_phone":"+1-415-392-3505","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"cafe-claude-san-francisco","categories":[["French","french"],["Jazz
+      & Blues","jazzandblues"],["Specialty Food","gourmet"]],"location":{"cross_streets":"Sutter
+      St & Bush St","city":"San Francisco","display_address":["7 Claude Ln","(b/t
+      Sutter St & Bush St)","Union Square","San Francisco, CA 94108"],"geo_accuracy":8,"neighborhoods":["Union
+      Square"],"postal_code":"94108","country_code":"US","address":["7 Claude Ln"],"coordinate":{"latitude":37.7898383,"longitude":-122.4042278},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/8ZmEszI4ZMncK9kuJYQjuA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":570,"name":"Udupi
+      Palace","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/udupi-palace-san-francisco","phone":"4159708000","snippet_text":"Wow,
+      I get why this place is so loved in Berkeley and SF. The muttar I got was super-delicious
+      (also the peas were actually bright green and fresh looking,...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/bHBMIPrPulSCjXHo9HqFuQ/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/by4XiH-CyIuDk4ZimUEscw/ms.jpg","display_phone":"+1-415-970-8000","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"udupi-palace-san-francisco","categories":[["Indian","indpak"],["Vegetarian","vegetarian"],["Vegan","vegan"]],"location":{"cross_streets":"21st
+      St & Hill St","city":"San Francisco","display_address":["1007 Valencia St","(b/t
+      21st St & Hill St)","Mission","San Francisco, CA 94110"],"geo_accuracy":8,"neighborhoods":["Mission"],"postal_code":"94110","country_code":"US","address":["1007
+      Valencia St"],"coordinate":{"latitude":37.756742699999997,"longitude":-122.4209752},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/JM3jo6vkc60anARye9ypfQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":386,"name":"Delessio
+      Market & Bakery","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/delessio-market-and-bakery-san-francisco","phone":"4155525559","snippet_text":"True
+      story: I''ve seriously considered flying from Southern California for a day
+      trip to Delessio Market.  \n\nWarm and cozy, this bakery is the stuff of...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/5Ygaz9tFk65e7dbXw_LWgg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/909Ok1UjIBDi9cvIgz7Bqg/ms.jpg","display_phone":"+1-415-552-5559","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"delessio-market-and-bakery-san-francisco","categories":[["Bakeries","bakeries"],["Delis","delis"],["Caterers","catering"]],"location":{"cross_streets":"Gough
+      St & Valencia St","city":"San Francisco","display_address":["1695 Market St","(b/t
+      Gough St & Valencia St)","Hayes Valley","San Francisco, CA 94103"],"geo_accuracy":8,"neighborhoods":["Hayes
+      Valley","SOMA"],"postal_code":"94103","country_code":"US","address":["1695 Market
+      St"],"coordinate":{"latitude":37.772548,"longitude":-122.421922},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/eYXwVR4mMAjzkJnm5wneHQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":2899,"name":"Burma
+      SuperStar","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/burma-superstar-san-francisco","phone":"4153872147","snippet_text":"Um...
+      how should I put this..? The Food Network didn''t actually screw this one up-
+      its as delicious as they said it was. \n\nThe tea leaf salad, garlic...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/j1oziNocpqBj7B1vIMqCPw/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/6DzgJfZ81N4pbr5hfKS08w/ms.jpg","display_phone":"+1-415-387-2147","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"burma-superstar-san-francisco","categories":[["Burmese","burmese"]],"location":{"cross_streets":"4th
+      Ave & 5th Ave","city":"San Francisco","display_address":["309 Clement St","(b/t
+      4th Ave & 5th Ave)","Inner Richmond","San Francisco, CA 94118"],"geo_accuracy":8,"neighborhoods":["Inner
+      Richmond"],"postal_code":"94118","country_code":"US","address":["309 Clement
+      St"],"coordinate":{"latitude":37.783060999999996,"longitude":-122.462406},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/AdupguljIIejtEOnExddkQ","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":156,"name":"Tanguito","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/tanguito-san-francisco","phone":"4155774223","snippet_text":"I
+      absolutely love this place and recommend it whenever I can. The food is amazing,
+      probably the best place to go as far as Fisherman''s Wharf is concerned......","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/WDyO6D4e00NDaND42JjYqg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/OUrWPSyyGz4NGsrBpC4Ucg/ms.jpg","display_phone":"+1-415-577-4223","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"tanguito-san-francisco","categories":[["Argentine","argentine"],["Food
+      Stands","foodstands"]],"location":{"cross_streets":"Beach St & Jefferson St","city":"San
+      Francisco","display_address":["2850 Jones St","(b/t Beach St & Jefferson St)","Fisherman''s
+      Wharf","San Francisco, CA 94133"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94133","country_code":"US","address":["2850 Jones St"],"coordinate":{"latitude":37.807239500000001,"longitude":-122.4172671},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/AjuUljBC7tCMxX5eiWlzMA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":437,"name":"Curry
+      Up Now","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/curry-up-now-san-francisco","phone":"6504773000","snippet_text":"I
+      am not into gimmicky fusion restaurants.  To be completely honest, when I heard
+      of this place I had ZERO interest.  \n\nThen I tried a vegetarian paneer...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/qJWS1IOj_cF0DI8Ltb1Tpg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/tV4qF5b_FOZhNGah0gExDA/ms.jpg","display_phone":"+1-650-477-3000","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"curry-up-now-san-francisco","categories":[["Indian","indpak"],["Food
+      Stands","foodstands"]],"location":{"cross_streets":"Sansome St & Treasury Pl","city":"San
+      Francisco","display_address":["225 Bush St","(b/t Sansome St & Treasury Pl)","Financial
+      District","San Francisco, CA 94104"],"geo_accuracy":8,"neighborhoods":["Financial
+      District"],"postal_code":"94104","country_code":"US","address":["225 Bush St"],"coordinate":{"latitude":37.790970000000002,"longitude":-122.401066},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/u6AFSw9Hawsjhf7hmFdoSg","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":322,"name":"New
+      Eritrea Restaurant & Bar","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/new-eritrea-restaurant-and-bar-san-francisco","phone":"4156811288","snippet_text":"This
+      was the first time I ever had Ethiopian food, the flavor just blew me away.  I
+      plan on coming back often.\n\nI came here for dinner with my boyfriend...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/sYgzkBUXRl6Oh4-aR3zAgQ/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/qufvoy7nvk4sAruKAShVMA/ms.jpg","display_phone":"+1-415-681-1288","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"new-eritrea-restaurant-and-bar-san-francisco","categories":[["Ethiopian","ethiopian"]],"location":{"cross_streets":"10th
+      Ave & 11th Ave","city":"San Francisco","display_address":["907 Irving St","(b/t
+      10th Ave & 11th Ave)","Inner Sunset","San Francisco, CA 94122"],"geo_accuracy":8,"neighborhoods":["Inner
+      Sunset"],"postal_code":"94122","country_code":"US","address":["907 Irving St"],"coordinate":{"latitude":37.763731999999997,"longitude":-122.46763799999999},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/5zKrxtjKK09F_Dwgs5Kxwg","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":832,"name":"Lahore
+      Karahi","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/lahore-karahi-san-francisco","phone":"4155678603","snippet_text":"Lahore
+      Karahi is as delicious as ever! And, as it seems to be with every delicious
+      downtown eatery, less accessible than ever! Hungry diners, be warned. If...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/-feaTnZUqRI-daxk8Tn_CQ/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/pCNAjTj7ebh3Fs7X94iyKw/ms.jpg","display_phone":"+1-415-567-8603","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"lahore-karahi-san-francisco","categories":[["Pakistani","pakistani"]],"location":{"cross_streets":"Harlem
+      Aly & Leavenworth St","city":"San Francisco","display_address":["612 O''Farrell
+      St","(b/t Harlem Aly & Leavenworth St)","Civic Center/Tenderloin","San Francisco,
+      CA 94109"],"geo_accuracy":8,"neighborhoods":["Civic Center/Tenderloin"],"postal_code":"94109","country_code":"US","address":["612
+      O''Farrell St"],"coordinate":{"latitude":37.785648500000001,"longitude":-122.4150254},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?term=food&location=San%20Francisco&limit=3
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="d3857e7c047431c497255d17cb5094e0",
+        oauth_signature="tjvLKZ6cA%2FJ6wWznpW9uoFR%2BZGM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133546", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:02 GMT
+      server:
+      - Apache
+      x-node:
+      - web37, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.027086400000001731,"longitude_delta":0.027851999999995769},"center":{"latitude":37.793463000000003,"longitude":-122.407898}},"total":10371,"businesses":[{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/WavvLdfdP6g8aZTtbBQHTw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":2761,"name":"Gary
+      Danko","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/gary-danko-san-francisco","phone":"4157492060","snippet_text":"ah...GD,
+      we meet again.. =)\n\njust looked at my old review...according to that one,
+      i was almost exactly a year ago.  we knew we were coming here since i...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/lansxaYjxNSWAEuDSUl-NA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/L1aFoWLpfWvBd_HafdXC5A/ms.jpg","display_phone":"+1-415-749-2060","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"gary-danko-san-francisco","categories":[["American
+      (New)","newamerican"]],"location":{"city":"San Francisco","display_address":["800
+      N Point St","Fisherman''s Wharf","San Francisco, CA 94109"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94109","country_code":"US","address":["800 N Point St"],"coordinate":{"latitude":37.805774999999997,"longitude":-122.420558},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/Awdtc2yS8hvgs6djdX6xFg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":26,"name":"Off
+      the Grid: 5M","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/off-the-grid-5m-san-francisco","snippet_text":"Long
+      lines and large crowds freak me out. I think have a weird type of claustrophobia.
+      Because of this, I still haven''t experienced the mother of all OTG''s,...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/1YkkjirU6KIya-kaL2ltvg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/GEoxhhpLad-zO6gDibxMrA/ms.jpg","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"off-the-grid-5m-san-francisco","categories":[["Food
+      Stands","foodstands"],["Specialty Food","gourmet"]],"location":{"city":"San
+      Francisco","display_address":["Minna St & 5th St","SOMA","San Francisco, CA
+      94103"],"geo_accuracy":7,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":["Minna
+      St & 5th St"],"coordinate":{"latitude":37.782295900000001,"longitude":-122.405931},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/bUr4iq2mKKiBOu2HKynylg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":378,"name":"HRD
+      Coffee Shop","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/hrd-coffee-shop-san-francisco","phone":"4155432355","snippet_text":"Came
+      here on Sat and there was a short line out the door.  Heard about this place
+      from  the show Diners, Drive-ins and Dives.  \n\nAnyhow, BF and I ordered...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/DAsPBvjjRg4hEg-GANlsYQ/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/NQcymlXxwMlUzPMZktyVog/ms.jpg","display_phone":"+1-415-543-2355","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"hrd-coffee-shop-san-francisco","categories":[["Coffee
+      & Tea","coffee"],["Korean","korean"]],"location":{"cross_streets":"Bryant St
+      & Taber Aly","city":"San Francisco","display_address":["521 3rd St","Ste A","(b/t
+      Bryant St & Taber Aly)","SOMA","San Francisco, CA 94107"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94107","country_code":"US","address":["521
+      3rd St","Ste A"],"coordinate":{"latitude":37.781151000000001,"longitude":-122.39523800000001},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?term=food&location=San%20Francisco&limit=2
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="7deba9caa8314dbd324d95895020480f",
+        oauth_signature="SI4AE%2BL32%2FH1Ltu5rutadT3Fr1Q%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133546", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:02 GMT
+      server:
+      - Apache
+      x-node:
+      - web38, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.025827010000000428,"longitude_delta":0.016089700000009088},"center":{"latitude":37.794035449999996,"longitude":-122.41324449999999}},"total":10371,"businesses":[{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/WavvLdfdP6g8aZTtbBQHTw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":2761,"name":"Gary
+      Danko","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/gary-danko-san-francisco","phone":"4157492060","snippet_text":"ah...GD,
+      we meet again.. =)\n\njust looked at my old review...according to that one,
+      i was almost exactly a year ago.  we knew we were coming here since i...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/lansxaYjxNSWAEuDSUl-NA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/L1aFoWLpfWvBd_HafdXC5A/ms.jpg","display_phone":"+1-415-749-2060","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"gary-danko-san-francisco","categories":[["American
+      (New)","newamerican"]],"location":{"city":"San Francisco","display_address":["800
+      N Point St","Fisherman''s Wharf","San Francisco, CA 94109"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94109","country_code":"US","address":["800 N Point St"],"coordinate":{"latitude":37.805774999999997,"longitude":-122.420558},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/Awdtc2yS8hvgs6djdX6xFg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":26,"name":"Off
+      the Grid: 5M","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/off-the-grid-5m-san-francisco","snippet_text":"Long
+      lines and large crowds freak me out. I think have a weird type of claustrophobia.
+      Because of this, I still haven''t experienced the mother of all OTG''s,...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/1YkkjirU6KIya-kaL2ltvg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/GEoxhhpLad-zO6gDibxMrA/ms.jpg","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"off-the-grid-5m-san-francisco","categories":[["Food
+      Stands","foodstands"],["Specialty Food","gourmet"]],"location":{"city":"San
+      Francisco","display_address":["Minna St & 5th St","SOMA","San Francisco, CA
+      94103"],"geo_accuracy":7,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":["Minna
+      St & 5th St"],"coordinate":{"latitude":37.782295900000001,"longitude":-122.405931},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?term=food&location=San%20Francisco&limit=1&offset=1
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="e1ad79ad09b081512b2c4178b0050288",
+        oauth_signature="IeSjjanDJw1wMNdjzMRR5GIfzlU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133546", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:02 GMT
+      server:
+      - Apache
+      x-node:
+      - web27, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.0,"longitude_delta":0.0},"center":{"latitude":37.782295900000001,"longitude":-122.405931}},"total":10371,"businesses":[{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/Awdtc2yS8hvgs6djdX6xFg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":26,"name":"Off
+      the Grid: 5M","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/off-the-grid-5m-san-francisco","snippet_text":"Long
+      lines and large crowds freak me out. I think have a weird type of claustrophobia.
+      Because of this, I still haven''t experienced the mother of all OTG''s,...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/1YkkjirU6KIya-kaL2ltvg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/GEoxhhpLad-zO6gDibxMrA/ms.jpg","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"off-the-grid-5m-san-francisco","categories":[["Food
+      Stands","foodstands"],["Specialty Food","gourmet"]],"location":{"city":"San
+      Francisco","display_address":["Minna St & 5th St","SOMA","San Francisco, CA
+      94103"],"geo_accuracy":7,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":["Minna
+      St & 5th St"],"coordinate":{"latitude":37.782295900000001,"longitude":-122.405931},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?ll=37.788022%2C-122.399797&term=food&limit=1
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="8fce6caea66a6660fb4a1439ab264351",
+        oauth_signature="oqybiDR5bA5D84pn6jCb08WAp28%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133547", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:03 GMT
+      server:
+      - Apache
+      x-node:
+      - web27, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.0032428000000095381,"longitude_delta":0.0013959000000056676},"center":{"latitude":37.789496,"longitude":-122.4004315}},"total":3143,"businesses":[{"distance":346.2505511789343,"mobile_url":"http://m.yelp.com/biz/AjuUljBC7tCMxX5eiWlzMA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":437,"name":"Curry
+      Up Now","rating":4.0,"url":"http://www.yelp.com/biz/curry-up-now-san-francisco","location":{"cross_streets":"Sansome
+      St & Treasury Pl","city":"San Francisco","display_address":["225 Bush St","(b/t
+      Sansome St & Treasury Pl)","Financial District","San Francisco, CA 94104"],"geo_accuracy":8,"neighborhoods":["Financial
+      District"],"postal_code":"94104","country_code":"US","address":["225 Bush St"],"coordinate":{"latitude":37.790970000000002,"longitude":-122.401066},"state_code":"CA"},"phone":"6504773000","snippet_text":"I
+      am not into gimmicky fusion restaurants.  To be completely honest, when I heard
+      of this place I had ZERO interest.  \n\nThen I tried a vegetarian paneer...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/qJWS1IOj_cF0DI8Ltb1Tpg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/tV4qF5b_FOZhNGah0gExDA/ms.jpg","display_phone":"+1-650-477-3000","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"curry-up-now-san-francisco","categories":[["Indian","indpak"],["Food
+      Stands","foodstands"]],"rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?ll=37.788022%2C-122.399797&term=food&sort=1&limit=1
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="f847b73048fc7ef03c996b7c84b2b525",
+        oauth_signature="YcOAd8p8sscY12Ezm8%2FZcKVqH7s%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133547", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:03 GMT
+      server:
+      - Apache
+      x-node:
+      - web37, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb1
+    body: ! '{"region":{"span":{"latitude_delta":0.00042899999999690408,"longitude_delta":0.0005676000000107706},"center":{"latitude":37.787827,"longitude":-122.399539}},"total":40,"businesses":[{"distance":62.742950595787413,"mobile_url":"http://m.yelp.com/biz/Bbz7YqUOl0xSvcv9R_UMfQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":303,"name":"Tara","rating":3.5,"url":"http://www.yelp.com/biz/tara-san-francisco","location":{"cross_streets":"Minna
+      St & Mission St","city":"San Francisco","display_address":["123 2nd St","(b/t
+      Minna St & Mission St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["123
+      2nd St"],"coordinate":{"latitude":37.787632000000002,"longitude":-122.399281},"state_code":"CA"},"phone":"4153489977","snippet_text":"I
+      really like this place, and for a bunch of reasons.\n\n1.  The food is great\n2.  The
+      prices are great\n3.  Overall, better than OSHA\n4.  The employees are...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/MjPnnpmfO_-IriZJGc9aAA/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/0JgcKA7UsB2CwqlwZBh9Sg/ms.jpg","display_phone":"+1-415-348-9977","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"tara-san-francisco","categories":[["Thai","thai"],["Asian
+      Fusion","asianfusion"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?ll=37.788022%2C-122.399797&term=food&sort=1&limit=1&offset=39
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="6a1e5c7dec4bec66d539d4e01d251afa",
+        oauth_signature="ifHTJY%2BzwRiybvOPnoJQxsYxSw0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133547", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:03 GMT
+      server:
+      - Apache
+      x-node:
+      - web37, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb1
+    body: ! '{"region":{"span":{"latitude_delta":0.0024342694670735909,"longitude_delta":0.0052168436253907657},"center":{"latitude":37.786915513878597,"longitude":-122.40216829255701}},"total":40,"businesses":[{"distance":483.98616343284505,"mobile_url":"http://m.yelp.com/biz/dC_kA-R2qb-0iEmoI4VKPg","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":624,"name":"Amber
+      India","rating":4.0,"url":"http://www.yelp.com/biz/amber-india-san-francisco-2","location":{"city":"San
+      Francisco","display_address":["25 Yerba Buena Ln","Union Square","San Francisco,
+      CA 94103"],"geo_accuracy":9,"neighborhoods":["Union Square","SOMA"],"postal_code":"94103","country_code":"US","address":["25
+      Yerba Buena Ln"],"coordinate":{"latitude":37.785809027757203,"longitude":-122.40453958511399},"state_code":"CA"},"phone":"4157770500","snippet_text":"Deserves
+      a 4.5-5, so I''ll give it the benefit of the doubt.\n\nThe food is very high-quality,
+      and the dishes are much more varied and creative than you''d find...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/-tFj0WU0wixzZpvYVyi-Kw/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/FnzZb-YoP1PY4syG5ilXTw/ms.jpg","display_phone":"+1-415-777-0500","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"amber-india-san-francisco-2","categories":[["Indian","indpak"]],"rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?location=San%20Francisco&category_filter=indpak&limit=10
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="2c7f9e7a737ee1d5c0a9457e03de9766",
+        oauth_signature="9SCG3DXsrXsz9%2BUdml7Y%2BsB20zg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133548", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:04 GMT
+      server:
+      - Apache
+      x-node:
+      - web38, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb1
+    body: ! '{"region":{"span":{"latitude_delta":0.040525430000002416,"longitude_delta":0.080389099999990776},"center":{"latitude":37.774755650000003,"longitude":-122.42968740000001}},"total":78,"businesses":[{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/gfJ-15fsxcGwgodwBsiY3Q","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":14,"name":"Indian
+      Bento","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/indian-bento-san-francisco-2","phone":"4152007625","snippet_text":"Just
+      got my hands on the garlic naan. What a great treat!","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/w9kFk9rRQxWU3_ekFxwjBA/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/aXheNd46Lhr8KYzQAQde6w/ms.jpg","display_phone":"+1-415-200-7625","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"indian-bento-san-francisco-2","categories":[["Indian","indpak"],["Caterers","catering"]],"location":{"cross_streets":"1st
+      St & James Lick Fwy","city":"San Francisco","display_address":["525 Howard St","(b/t
+      1st St & James Lick Fwy)","SOMA","San Francisco, CA 94105"],"geo_accuracy":9,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["525
+      Howard St"],"coordinate":{"latitude":37.793176299999999,"longitude":-122.3945102},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/8ZmEszI4ZMncK9kuJYQjuA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":570,"name":"Udupi
+      Palace","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/udupi-palace-san-francisco","phone":"4159708000","snippet_text":"Wow,
+      I get why this place is so loved in Berkeley and SF. The muttar I got was super-delicious
+      (also the peas were actually bright green and fresh looking,...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/bHBMIPrPulSCjXHo9HqFuQ/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/by4XiH-CyIuDk4ZimUEscw/ms.jpg","display_phone":"+1-415-970-8000","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"udupi-palace-san-francisco","categories":[["Indian","indpak"],["Vegetarian","vegetarian"],["Vegan","vegan"]],"location":{"cross_streets":"21st
+      St & Hill St","city":"San Francisco","display_address":["1007 Valencia St","(b/t
+      21st St & Hill St)","Mission","San Francisco, CA 94110"],"geo_accuracy":8,"neighborhoods":["Mission"],"postal_code":"94110","country_code":"US","address":["1007
+      Valencia St"],"coordinate":{"latitude":37.756742699999997,"longitude":-122.4209752},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/El1fNeBVBglXlZtFuq4SWA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":207,"name":"Saffron
+      Grill","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/saffron-grill-san-francisco","phone":"4155675100","snippet_text":"A
+      cozy restaurant with very yummy food.  They deliver which is great, although
+      a trip to the restaurant is much more fun.  The portion sizes are decent -...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/VJaS-KDIWg5NfVx3h6-WUg/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/ri0NAui3hxTASI4vT6BZWQ/ms.jpg","display_phone":"+1-415-567-5100","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"saffron-grill-san-francisco","categories":[["Indian","indpak"]],"location":{"cross_streets":"Divisadero
+      St & Scott St","city":"San Francisco","display_address":["1279 Fulton St","(b/t
+      Divisadero St & Scott St)","Western Addition/NOPA","San Francisco, CA 94117"],"geo_accuracy":8,"neighborhoods":["Western
+      Addition/NOPA"],"postal_code":"94117","country_code":"US","address":["1279 Fulton
+      St"],"coordinate":{"latitude":37.776918799999997,"longitude":-122.437793},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/XANvY_2W7MR6YTyR8CGzWQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":425,"name":"Aslam''s
+      Rasoi","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/aslams-rasoi-san-francisco","phone":"4156950599","snippet_text":"The
+      food might be four (4) stars at times but it is always tasty and good. I have
+      been here to eat 3 times now.  \n\nThe service is what makes it five (5)...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/PJOrQEg4E_-qGMrYCMAHhA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/2t949zxwBI-zYYKXkbABiQ/ms.jpg","display_phone":"+1-415-695-0599","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"aslams-rasoi-san-francisco","categories":[["Indian","indpak"],["Pakistani","pakistani"]],"location":{"cross_streets":"21st
+      St & Hill St","city":"San Francisco","display_address":["1037 Valencia St","(b/t
+      21st St & Hill St)","Mission","San Francisco, CA 94110"],"geo_accuracy":8,"neighborhoods":["Mission"],"postal_code":"94110","country_code":"US","address":["1037
+      Valencia St"],"coordinate":{"latitude":37.756335,"longitude":-122.42107300000001},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/AjuUljBC7tCMxX5eiWlzMA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":437,"name":"Curry
+      Up Now","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/curry-up-now-san-francisco","phone":"6504773000","snippet_text":"I
+      am not into gimmicky fusion restaurants.  To be completely honest, when I heard
+      of this place I had ZERO interest.  \n\nThen I tried a vegetarian paneer...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/qJWS1IOj_cF0DI8Ltb1Tpg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/tV4qF5b_FOZhNGah0gExDA/ms.jpg","display_phone":"+1-650-477-3000","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"curry-up-now-san-francisco","categories":[["Indian","indpak"],["Food
+      Stands","foodstands"]],"location":{"cross_streets":"Sansome St & Treasury Pl","city":"San
+      Francisco","display_address":["225 Bush St","(b/t Sansome St & Treasury Pl)","Financial
+      District","San Francisco, CA 94104"],"geo_accuracy":8,"neighborhoods":["Financial
+      District"],"postal_code":"94104","country_code":"US","address":["225 Bush St"],"coordinate":{"latitude":37.790970000000002,"longitude":-122.401066},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/1euyuVQE97S5-NhqJr_wjw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":35,"name":"Juhu
+      Beach Club","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/juhu-beach-club-san-francisco","phone":"4152980471","snippet_text":"Everything
+      I''ve ever ordered here has been absolutely delicious  -- with the exception
+      of the Chowpatty Chicken sandwiches which is hands down one of the...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/IP4Iq32nNNeRZAQwfOeM-g/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/c-HfqH90dB-8KG2afWnS3w/ms.jpg","display_phone":"+1-415-298-0471","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"juhu-beach-club-san-francisco","categories":[["Indian","indpak"]],"location":{"city":"San
+      Francisco","display_address":["Inside Garage Cafe","320 11th St","SOMA","San
+      Francisco, CA 94103"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94103","country_code":"US","address":["Inside
+      Garage Cafe","320 11th St"],"coordinate":{"latitude":37.771351500000002,"longitude":-122.4134861},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/H4ytcO8p7uiiQ_I4iaeiwg","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":31,"name":"Masala
+      Dosa","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/masala-dosa-san-francisco","phone":"4155646976","snippet_text":"There
+      are so many Indian restaurants in the area, but this at the top of the list
+      and  will definitely be back.\nFood was fresh and yummy.  Service was...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/DvbUPZfxmV2lFeHZrO52Mg/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/p4S1OyUEFwe7evlSYC6HGQ/ms.jpg","display_phone":"+1-415-564-6976","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"masala-dosa-san-francisco","categories":[["Indian","indpak"]],"location":{"cross_streets":"Irving
+      St & Judah St","city":"San Francisco","display_address":["1375 9th Ave","(b/t
+      Irving St & Judah St)","Inner Sunset","San Francisco, CA 94122"],"geo_accuracy":8,"neighborhoods":["Inner
+      Sunset"],"postal_code":"94122","country_code":"US","address":["1375 9th Ave"],"coordinate":{"latitude":37.762626900000001,"longitude":-122.46622790000001},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/E4XfHol6VdPLJu-8hzetDw","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":15,"name":"Tikka
+      Benedict","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/tikka-benedict-san-francisco","phone":"4157786311","snippet_text":"How
+      many times can you remember stumbling upon some simple new invention or product
+      and immediately saying to yourself, \"why didn''t I think of that?\" Sadly,...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/7wLAtY6gT69Ufn0VySSZUA/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/nFymy-J99I0f_agmZiuYfQ/ms.jpg","display_phone":"+1-415-778-6311","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"tikka-benedict-san-francisco","categories":[["Indian","indpak"],["Coffee
+      & Tea","coffee"],["Breakfast & Brunch","breakfast_brunch"]],"location":{"cross_streets":"Spear
+      St & Main St","city":"San Francisco","display_address":["180 Howard St","(b/t
+      Spear St & Main St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["180
+      Howard St"],"coordinate":{"latitude":37.790870900000002,"longitude":-122.3931469},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/Qr0dBKxCtWWUr9bJ74aWQA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":568,"name":"Little
+      Delhi","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/little-delhi-san-francisco","phone":"4153983173","snippet_text":"Thanks
+      to a non- availability at Wayfare tavern, we decided to try this place on our
+      recent visit to SFO. My husband and I were a bit skeptical about this...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/l_duNuHs5sSMiXSXYzPvNA/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/DXAnyCwglEN5JLmsGdbWOg/ms.jpg","display_phone":"+1-415-398-3173","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"little-delhi-san-francisco","categories":[["Indian","indpak"]],"location":{"cross_streets":"Cyril
+      Magnin St & Hallidie Plz","city":"San Francisco","display_address":["83 Eddy
+      St","(b/t Cyril Magnin St & Hallidie Plz)","Civic Center/Tenderloin","San Francisco,
+      CA 94102"],"geo_accuracy":8,"neighborhoods":["Civic Center/Tenderloin","Union
+      Square"],"postal_code":"94102","country_code":"US","address":["83 Eddy St"],"coordinate":{"latitude":37.784296300000001,"longitude":-122.40919},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/0OUFGCqvp84JMJH7pnFHgw","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":697,"name":"Shalimar","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/shalimar-san-francisco","phone":"4159280333","snippet_text":"Was
+      in town for work, and our concierge directed my co-worker and me here, and we
+      were not disappointed.  We both had chicken tiki masala and naan (plain...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/j2dWw9TxQUBss_CaU0yhJg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/pxdxE1dg_AI2VNB7Hu2xhA/ms.jpg","display_phone":"+1-415-928-0333","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"shalimar-san-francisco","categories":[["Indian","indpak"]],"location":{"cross_streets":"Ofarrell
+      St & Geary St","city":"San Francisco","display_address":["532 Jones St","(b/t
+      Ofarrell St & Geary St)","Civic Center/Tenderloin","San Francisco, CA 94102"],"geo_accuracy":8,"neighborhoods":["Civic
+      Center/Tenderloin"],"postal_code":"94102","country_code":"US","address":["532
+      Jones St"],"coordinate":{"latitude":37.786252300000001,"longitude":-122.4130442},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?ll=37.788022%2C-122.399797&radius_filter=200&sort=1
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="7c2e8a7108273f472c41adcc51187e99",
+        oauth_signature="T%2F%2FE%2BpPImfPHpGZDV2tAhZTwFsw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133548", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:04 GMT
+      server:
+      - Apache
+      x-node:
+      - web33, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.0024008600000087199,"longitude_delta":0.0037526499999955831},"center":{"latitude":37.787792600000003,"longitude":-122.39979384999999}},"total":40,"businesses":[{"distance":6.284802555188052,"mobile_url":"http://m.yelp.com/biz/13whRcGp6e46SZvB-aqiTA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":96,"name":"Peet''s
+      Coffee & Tea","rating":4.0,"url":"http://www.yelp.com/biz/peets-coffee-and-tea-san-francisco-35","location":{"cross_streets":"Anthony
+      St & 2nd St","city":"San Francisco","display_address":["595 Mission St","(b/t
+      Anthony St & 2nd St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["595
+      Mission St"],"coordinate":{"latitude":37.788042599999997,"longitude":-122.3997304},"state_code":"CA"},"phone":"4154954323","snippet_text":"So
+      I took refuge in here to revolt against  \"forward-thinking\" hotel chains that
+      still don''t offer free Wifi. Rude!\n\nAnyway what was I going to say.... Oh...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/kkPZHLK82pVzr0w4JoCIig/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/2eGoFJNBBE2eFU8kSQBc-g/ms.jpg","display_phone":"+1-415-495-4323","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"peets-coffee-and-tea-san-francisco-35","categories":[["Coffee
+      & Tea","coffee"]],"rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png"},{"distance":27.728051864957205,"mobile_url":"http://m.yelp.com/biz/m6prpw1nQ8jfo3KdoB8eTw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":9,"name":"Shefman
+      Law Group","rating":4.5,"url":"http://www.yelp.com/biz/shefman-law-group-san-francisco-8","location":{"cross_streets":"2nd
+      St & New Montgomery St","city":"San Francisco","display_address":["604 Mission
+      St","10th Floor","(b/t 2nd St & New Montgomery St)","SOMA","San Francisco, CA
+      94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["604
+      Mission St","10th Floor"],"coordinate":{"latitude":37.787942800000003,"longitude":-122.40009619999999},"state_code":"CA"},"phone":"4153573681","snippet_text":"Woo
+      Hoo! An attorney who''s not a b**ch but ''bitchin'' \n\nLenore came into my
+      life when my partner fell into a manhole left uncovered in our neighborhood.
+      \nThe...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/V_m2dQ8s0d141-9kVyl7fA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/XQ6gpEl1RW7YTbV6V019jQ/ms.jpg","display_phone":"+1-415-357-3681","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"shefman-law-group-san-francisco-8","categories":[["Personal
+      Injury","personal_injury"]],"rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png"},{"distance":34.869098186703049,"mobile_url":"http://m.yelp.com/biz/vQn4cUC1Mf5zHse_V6UL4g","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":12,"name":"American
+      Red Cross Bay Area Chapter","rating":5.0,"url":"http://www.yelp.com/biz/american-red-cross-bay-area-chapter-san-francisco","location":{"cross_streets":"Jessie
+      St & Mission St","city":"San Francisco","display_address":["85 2nd St","(b/t
+      Jessie St & Mission St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["85
+      2nd St"],"coordinate":{"latitude":37.788299000000002,"longitude":-122.39998300000001},"state_code":"CA"},"phone":"4154278000","snippet_text":"Awesome
+      staff.  I swear they remember my face LoL!\n\nDecided to give everything I would''ve
+      spent on a blazer at J Crew to help fund the relief efforts in...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/sO1jM981ylWajwMhNK_e0A/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/wMi8iS_xJ7eZKm-JfhMcTQ/ms.jpg","display_phone":"+1-415-427-8000","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"american-red-cross-bay-area-chapter-san-francisco","categories":[["Community
+      Service/Non-Profit","nonprofit"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"},{"distance":34.528294956865203,"mobile_url":"http://m.yelp.com/biz/YI71Inv_aqV_DtRCJvcODA","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":83,"name":"The
+      Onion","rating":4.5,"url":"http://www.yelp.com/biz/the-onion-san-francisco","location":{"cross_streets":"2nd
+      St & New Montgomery St","city":"San Francisco","display_address":["604 Mission
+      St","(b/t 2nd St & New Montgomery St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["604
+      Mission St"],"coordinate":{"latitude":37.787973000000001,"longitude":-122.40018499999999},"state_code":"CA"},"phone":"4153489200","snippet_text":"The
+      Onion is filled with words of wisdom. When it first started, it was a little
+      satirical paper, paving the way for Jon Stewart and the truthiness of...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/Bql3PzOyD5rkaCreKR-1hQ/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/ZoLsjeV-jJgTz-_2fm6Dyw/ms.jpg","display_phone":"+1-415-348-9200","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"the-onion-san-francisco","categories":[["Print
+      Media","printmedia"]],"rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png"},{"distance":44.294740898465278,"mobile_url":"http://m.yelp.com/biz/eZ2_6Wx-Lqp_mLtG6-zzTg","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":77,"name":"Sammy''s
+      on 2nd","rating":4.0,"url":"http://www.yelp.com/biz/sammys-on-2nd-san-francisco","location":{"cross_streets":"Jessie
+      St & Mission St","city":"San Francisco","display_address":["84 2nd St","(b/t
+      Jessie St & Mission St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["84
+      2nd St"],"coordinate":{"latitude":37.788105000000002,"longitude":-122.40029},"state_code":"CA"},"phone":"4152430311","snippet_text":"Fresh
+      made sandwiches that are sadly becoming increasingly popular at lunch time.
+      \n\nThey don''t skimp on the meat and they offer a frequent buyer card that...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/LCc_uCvWaarqyuJN1Ye88w/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/edSD_a8cjqkJKqdWlS9_3Q/ms.jpg","display_phone":"+1-415-243-0311","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"sammys-on-2nd-san-francisco","categories":[["Beer,
+      Wine & Spirits","beer_and_wine"],["Sandwiches","sandwiches"],["Convenience Stores","convenience"]],"rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png"},{"distance":47.345496780931668,"mobile_url":"http://m.yelp.com/biz/JXAXwVRf0dofJQ1t5Pr2eA","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":27,"name":"AIDS
+      Walk San Francisco","rating":5.0,"url":"http://www.yelp.com/biz/aids-walk-san-francisco-san-francisco-2","location":{"cross_streets":"Mission
+      St & Minna St","city":"San Francisco","display_address":["121 2nd St","(b/t
+      Mission St & Minna St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["121
+      2nd St"],"coordinate":{"latitude":37.787817400000002,"longitude":-122.39932450000001},"state_code":"CA"},"phone":"4156150368","snippet_text":"Who
+      would rate this down, first of all?\n\nNOTE: If you belong to a community service
+      club or organisation (Leo Club, Interact, Key Club), I highly recommend...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/7hTmwqLwUhKLygurT8YRyg/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/5TaQWHQt45HqoIqJ0e1w9A/ms.jpg","display_phone":"+1-415-615-0368","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"aids-walk-san-francisco-san-francisco-2","categories":[["Active
+      Life","active"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"},{"distance":55.563150656312715,"mobile_url":"http://m.yelp.com/biz/BwrCmi500cEJzd2W5p8hBw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":31,"name":"Harry
+      O Menswear","rating":5.0,"url":"http://www.yelp.com/biz/harry-o-menswear-san-francisco-2","location":{"cross_streets":"Mission
+      St & Minna St","city":"San Francisco","display_address":["124 2nd St","(b/t
+      Mission St & Minna St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["124
+      2nd St"],"coordinate":{"latitude":37.787598799999998,"longitude":-122.3994608},"state_code":"CA"},"phone":"4157772224","snippet_text":"This
+      is not a review of the store but of the super salesman Harry O.  I got the pleasure
+      having Harry O help me out at the Nordstroms at the westfield mall....","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/18UDm0MIzH6S1wCCR489Vg/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/YaGqDxMjsi3ooOVj9V8oAg/ms.jpg","display_phone":"+1-415-777-2224","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"harry-o-menswear-san-francisco-2","categories":[["Men''s
+      Clothing","menscloth"],["Shoe Stores","shoes"],["Leather Goods","leather"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"},{"distance":96.065950594269978,"mobile_url":"http://m.yelp.com/biz/4BI1hK0tQZwQWino8olmTQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":75,"name":"Alexander
+      Book Company","rating":4.0,"url":"http://www.yelp.com/biz/alexander-book-company-san-francisco","location":{"cross_streets":"Jessie
+      St & Stevenson St","city":"San Francisco","display_address":["50 2nd St","(b/t
+      Jessie St & Stevenson St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["50
+      2nd St"],"coordinate":{"latitude":37.788654999999999,"longitude":-122.400541},"state_code":"CA"},"phone":"4154952992","snippet_text":"Love
+      this place! Today I made my second or third purchase from them, just now getting
+      around to writing a review. They''ve got tons of books, no used books,...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/NPwdw8xSV2vVzJoxOU8zJw/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/puiyMwDUwmC8gOQ7-z0vfg/ms.jpg","display_phone":"+1-415-495-2992","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"alexander-book-company-san-francisco","categories":[["Bookstores","bookstores"]],"rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png"},{"distance":102.60260228811592,"mobile_url":"http://m.yelp.com/biz/HHGPNOlbx-DNX5mHz-zZsw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":60,"name":"Deep
+      Massage & Bodywork","rating":5.0,"url":"http://www.yelp.com/biz/deep-massage-and-bodywork-san-francisco","location":{"cross_streets":"Mission
+      St & Minna St","city":"San Francisco","display_address":["111 New Montgomery
+      St","Ste 208","(b/t Mission St & Minna St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["111
+      New Montgomery St","Ste 208"],"coordinate":{"latitude":37.787134199999997,"longitude":-122.4001152},"state_code":"CA"},"phone":"4156720665","snippet_text":"Deep
+      Tissue Bliss - Her name is Madrone!\n\nMadrone at Deep Massage is the best massage
+      therapist I have ever experienced. I have a muscular build and work...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/v-UiVaYcSR6mfMAnLGuvBg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/1MybHQzHJa_0Od4KPVa89A/ms.jpg","display_phone":"+1-415-672-0665","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"deep-massage-and-bodywork-san-francisco","categories":[["Massage","massage"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"},{"distance":104.6665940634643,"mobile_url":"http://m.yelp.com/biz/T25BHGPYdUVuZkJ8xRiaLg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":15,"name":"Yelp
+      Elite Event At the Melt","rating":4.5,"url":"http://www.yelp.com/biz/yelp-elite-event-at-the-melt-san-francisco","snippet_text":"This
+      was only my 2nd yelp elite event and I was really glad to make it onto the list
+      for this! I was a bit hesitant to go out to SF on my own (this event...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/JNv7VBL74sN1d8WzSL8mtg/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/ezbiHNRWTbSFLi47ANhw5w/ms.jpg","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"yelp-elite-event-at-the-melt-san-francisco","categories":[["Local
+      Flavor","localflavor"]],"location":{"cross_streets":"Mission St & Minna St","city":"San
+      Francisco","display_address":["115 New Montgomery St","(b/t Mission St & Minna
+      St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["115
+      New Montgomery St"],"coordinate":{"latitude":37.787108799999999,"longitude":-122.4000858},"state_code":"CA"}},{"distance":119.93418614181833,"mobile_url":"http://m.yelp.com/biz/V18yXwB2nw6D74XWSt1wZg","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":43,"name":"The
+      Economist","rating":5.0,"url":"http://www.yelp.com/biz/the-economist-san-francisco","location":{"cross_streets":"Aldrich
+      Aly & Mission St","city":"San Francisco","display_address":["90 New Montgomery
+      St","(b/t Aldrich Aly & Mission St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["90
+      New Montgomery St"],"coordinate":{"latitude":37.787422999999997,"longitude":-122.400932},"state_code":"CA"},"phone":"4152780880","snippet_text":"Superb
+      in almost every respect. Also available on iPad with paid subscription!","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/9hRCCf7B-dja-bI0wKjhfQ/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/yWhBxCcWz46RDvLSC7HP4w/ms.jpg","display_phone":"+1-415-278-0880","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"the-economist-san-francisco","categories":[["Print
+      Media","printmedia"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"},{"distance":119.99597472341455,"mobile_url":"http://m.yelp.com/biz/ndQY8oeuHntR9sUU0fzF-A","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":13,"name":"Robert
+      L Sommers","rating":5.0,"url":"http://www.yelp.com/biz/robert-l-sommers-san-francisco","snippet_text":"Bob
+      is awesome. He counseled me through an IRS CP 2000 notice that I worked on very
+      hard and as a result of his advice I owed the IRS NOTHING, as it should...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/XSTcZCu5mbRTzvQ-FSSb3Q/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/gglyBawPafMAV-OyleKCkQ/ms.jpg","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"robert-l-sommers-san-francisco","categories":[["Lawyers","lawyers"]],"location":{"cross_streets":"Aldrich
+      Aly & Mission St","city":"San Francisco","display_address":["90 New Montgomery
+      St","9th Fl","(b/t Aldrich Aly & Mission St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["90
+      New Montgomery St","9th Fl"],"coordinate":{"latitude":37.787421999999999,"longitude":-122.400932},"state_code":"CA"}},{"distance":123.78401268818135,"mobile_url":"http://m.yelp.com/biz/AtwGTZf_7fuqQl_rJ5mb0w","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":13,"name":"SC
+      Sports Therapy","rating":5.0,"url":"http://www.yelp.com/biz/sc-sports-therapy-san-francisco","location":{"cross_streets":"Stevenson
+      St & Jessie St","city":"San Francisco","display_address":["55 New Montgomery
+      St","(b/t Stevenson St & Jessie St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["55
+      New Montgomery St"],"coordinate":{"latitude":37.788089999999997,"longitude":-122.401203},"state_code":"CA"},"phone":"4158962273","snippet_text":"I
+      neglected an already bad back, and decided to move.  Needless to say, in two
+      days I was totally screwed.\n\nCalled SC this morning.  Dr. Steve answered the...","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/uLaa3BY__azisP10JM_BNA/ms.jpg","display_phone":"+1-415-896-2273","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"sc-sports-therapy-san-francisco","categories":[["Chiropractors","chiropractors"],["Massage","massage"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"},{"distance":152.08381834595136,"mobile_url":"http://m.yelp.com/biz/_1pQNjoY6jnK_bNiFsOgsQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":20,"name":"NextSpace","rating":5.0,"url":"http://www.yelp.com/biz/nextspace-san-francisco","location":{"cross_streets":"Market
+      St & Stevenson St","city":"San Francisco","display_address":["28 2nd St","Fl
+      3","(b/t Market St & Stevenson St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["28
+      2nd St","Fl 3"],"coordinate":{"latitude":37.788883900000002,"longitude":-122.40114079999999},"state_code":"CA"},"phone":"4155130456","snippet_text":"I''ve
+      worked at three coworking locations - NextSpace San Francisco and Santa Cruz
+      and The Urban Hive Sacramento. All locations are very good, but only...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/b3oVw3QzDED44wVdl8K1og/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/RjiSlrGsE476x-NpbMaWGA/ms.jpg","display_phone":"+1-415-513-0456","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"nextspace-san-francisco","categories":[["Venues
+      & Event Spaces","venues"],["Property Management","propertymgmt"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"},{"distance":152.4158845396683,"mobile_url":"http://m.yelp.com/biz/kEhq0qT_JFxgeh-pCS4lPA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":809,"name":"The
+      Sentinel","rating":4.0,"url":"http://www.yelp.com/biz/the-sentinel-san-francisco","location":{"cross_streets":"Market
+      St & Montgomery St","city":"San Francisco","display_address":["37 New Montgomery
+      St","(b/t Market St & Montgomery St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["37
+      New Montgomery St"],"coordinate":{"latitude":37.788283499999999,"longitude":-122.40149959999999},"state_code":"CA"},"phone":"4152849960","snippet_text":"My
+      coworkers introduced me to this secret corner of deliciousness. Their sandwiches
+      are very unique and hearty. Fresh, quick, real good food, they give you...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/HHWNKF-8DThsKGEyB0i6iQ/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/3e42LT0HEHGW-2W-EcWFAQ/ms.jpg","display_phone":"+1-415-284-9960","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"the-sentinel-san-francisco","categories":[["Sandwiches","sandwiches"]],"rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png"},{"distance":155.92683337602566,"mobile_url":"http://m.yelp.com/biz/2Rae6arbJHf2IJMNNK-9bQ","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":13,"name":"Catharine
+      Clark Gallery","rating":4.0,"url":"http://www.yelp.com/biz/catharine-clark-gallery-san-francisco","location":{"cross_streets":"New
+      Montgomery St","city":"San Francisco","display_address":["150 Minna St","Ground
+      Fl","(b/t New Montgomery St)","SOMA","San Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["150
+      Minna St","Ground Fl"],"coordinate":{"latitude":37.786701299999997,"longitude":-122.4003934},"state_code":"CA"},"phone":"4153991439","snippet_text":"Best
+      art in the city, hands down","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/iQk9B7VHmJjbMOqIH3-hUw/ms.jpg","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/lL8nWE5YXfHDSN-3vlb_EA/ms.jpg","display_phone":"+1-415-399-1439","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"catharine-clark-gallery-san-francisco","categories":[["Art
+      Galleries","galleries"]],"rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png"},{"distance":158.19052321663125,"mobile_url":"http://m.yelp.com/biz/HAvcfGrf8LwUF9ftkW_xcA","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":56,"name":"Learn
+      iT!","rating":4.5,"url":"http://www.yelp.com/biz/learn-it-san-francisco","location":{"cross_streets":"Market
+      St & Montgomery St","city":"San Francisco","display_address":["33 New Montgomery
+      St","Suite 300","(b/t Market St & Montgomery St)","SOMA","San Francisco, CA
+      94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["33
+      New Montgomery St","Suite 300"],"coordinate":{"latitude":37.78866,"longitude":-122.40140599999999},"state_code":"CA"},"phone":"4156930250","snippet_text":"Learn
+      iT is a great place for computer training!  \n\n-pacing was engaging, the instruction
+      clear, and troubleshooting helpful\n-one computer per student...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/ziFW8kc6CnmIuL-d8pPatQ/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/w9cJZ2zjqfPra1v1V-7L3g/ms.jpg","display_phone":"+1-415-693-0250","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"learn-it-san-francisco","categories":[["Specialty
+      Schools","specialtyschools"]],"rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png"},{"distance":158.72103589756401,"mobile_url":"http://m.yelp.com/biz/qfCYgMFoukWMT3-fr7fy6A","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":23,"name":"San
+      Francisco Paramedic Association","rating":4.5,"url":"http://www.yelp.com/biz/san-francisco-paramedic-association-san-francisco-2","location":{"cross_streets":"Annie
+      St & New Montgomery St","city":"San Francisco","display_address":["657 Mission
+      St","Ste 302","(b/t Annie St & New Montgomery St)","SOMA","San Francisco, CA
+      94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["657
+      Mission St","Ste 302"],"coordinate":{"latitude":37.787045999999997,"longitude":-122.401115},"state_code":"CA"},"phone":"4155431161","snippet_text":"Took
+      the 2 day ACLS Class with Paramedics. I was leary because I''d had 2 Collagues
+      tell me they were great and one who told me it was the worst Instructor...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/FEjCiFFUxCgV3SGo38hVSQ/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/i_FN253jCIhJB-IZiqneJw/ms.jpg","display_phone":"+1-415-543-1161","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"san-francisco-paramedic-association-san-francisco-2","categories":[["Health
+      and Medical","health"],["Specialty Schools","specialtyschools"],["Adult Education","adultedu"]],"rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png"},{"distance":160.00055968286011,"mobile_url":"http://m.yelp.com/biz/QpJlxjEoYI1gF1PvScwlvQ","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":60,"name":"Special
+      Xtra","rating":4.5,"url":"http://www.yelp.com/biz/special-xtra-san-francisco","snippet_text":"This
+      place is phenomenal. Given the impossible quality of coffee in this city, it''s
+      tempting to rate it against the heavyweights: the main Blue Bottle...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/HaaYkhruo2nY2SbP8g3DaQ/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/6YK44GoMa_vlCxhQjEELuQ/ms.jpg","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"special-xtra-san-francisco","categories":[["Coffee
+      & Tea","coffee"]],"location":{"cross_streets":"1st St & Shaw Aly","city":"San
+      Francisco","display_address":["46 Minna St","(b/t 1st St & Shaw Aly)","SOMA","San
+      Francisco, CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["46
+      Minna St"],"coordinate":{"latitude":37.788518600000003,"longitude":-122.3980881},"state_code":"CA"}},{"distance":172.29004782809068,"mobile_url":"http://m.yelp.com/biz/riM4thTacWlPXy9SzS_tPQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":15,"name":"Pioneer
+      Home Supply","rating":5.0,"url":"http://www.yelp.com/biz/pioneer-home-supply-san-francisco","location":{"cross_streets":"Annie
+      St & New Montgomery St","city":"San Francisco","display_address":["657 Mission
+      Street","Suite 505","(b/t Annie St & New Montgomery St)","SOMA","San Francisco,
+      CA 94105"],"geo_accuracy":8,"neighborhoods":["SOMA"],"postal_code":"94105","country_code":"US","address":["657
+      Mission Street","Suite 505"],"coordinate":{"latitude":37.786709999999999,"longitude":-122.40084},"state_code":"CA"},"phone":"4155431234","snippet_text":"Great
+      service, Linda was very helpful throughout the whole process.\nGreat deal too,
+      went to 3 other carpet stores, Pioneer had the best prices....","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/xISDipxAZBC1o3U7-JIJYA/ms.jpg","display_phone":"+1-415-543-1234","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"pioneer-home-supply-san-francisco","categories":[["Carpeting","carpeting"]],"rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?term=food&bounds=37.9%2C-122.5%7C37.788022%2C-122.399797&limit=3
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="f5c5e3b732acef6b50a81a5ed2aa58f6",
+        oauth_signature="iZQkPKALXKpvjX%2FHQqgQVSWk8ic%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133549", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:05 GMT
+      server:
+      - Apache
+      x-node:
+      - web2, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.11197800000000058,"longitude_delta":0.10020299999999338},"center":{"latitude":37.844010999999995,"longitude":-122.4498985}},"total":2670,"businesses":[{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/WavvLdfdP6g8aZTtbBQHTw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":2761,"name":"Gary
+      Danko","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/gary-danko-san-francisco","phone":"4157492060","snippet_text":"ah...GD,
+      we meet again.. =)\n\njust looked at my old review...according to that one,
+      i was almost exactly a year ago.  we knew we were coming here since i...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/lansxaYjxNSWAEuDSUl-NA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/L1aFoWLpfWvBd_HafdXC5A/ms.jpg","display_phone":"+1-415-749-2060","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"gary-danko-san-francisco","categories":[["American
+      (New)","newamerican"]],"location":{"city":"San Francisco","display_address":["800
+      N Point St","Fisherman''s Wharf","San Francisco, CA 94109"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94109","country_code":"US","address":["800 N Point St"],"coordinate":{"latitude":37.805774999999997,"longitude":-122.420558},"state_code":"CA"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/gsf5yf5HS3h8Z8MHpJ4t3w","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":969,"name":"Cafe
+      Claude","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/cafe-claude-san-francisco","phone":"4153923505","snippet_text":"The
+      best dish I have ever had, I kept hushing my date because he was interrupting
+      the mental orgasm I was having from Chef Michelle''s food at Cafe Claude....","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/RDFjSlbM9D-M9jmE_Vft7A/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/AehN_qlg7ohV41i783eUUg/ms.jpg","display_phone":"+1-415-392-3505","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"cafe-claude-san-francisco","categories":[["French","french"],["Jazz
+      & Blues","jazzandblues"],["Specialty Food","gourmet"]],"location":{"cross_streets":"Sutter
+      St & Bush St","city":"San Francisco","display_address":["7 Claude Ln","(b/t
+      Sutter St & Bush St)","Union Square","San Francisco, CA 94108"],"geo_accuracy":8,"neighborhoods":["Union
+      Square"],"postal_code":"94108","country_code":"US","address":["7 Claude Ln"],"coordinate":{"latitude":37.7898383,"longitude":-122.4042278},"state_code":"CA"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/AdupguljIIejtEOnExddkQ","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":156,"name":"Tanguito","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/tanguito-san-francisco","phone":"4155774223","snippet_text":"I
+      absolutely love this place and recommend it whenever I can. The food is amazing,
+      probably the best place to go as far as Fisherman''s Wharf is concerned......","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/WDyO6D4e00NDaND42JjYqg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/OUrWPSyyGz4NGsrBpC4Ucg/ms.jpg","display_phone":"+1-415-577-4223","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"tanguito-san-francisco","categories":[["Argentine","argentine"],["Food
+      Stands","foodstands"]],"location":{"cross_streets":"Beach St & Jefferson St","city":"San
+      Francisco","display_address":["2850 Jones St","(b/t Beach St & Jefferson St)","Fisherman''s
+      Wharf","San Francisco, CA 94133"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94133","country_code":"US","address":["2850 Jones St"],"coordinate":{"latitude":37.807239500000001,"longitude":-122.4172671},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?term=food&location=Hayes&cll=40.511278%2C-101.020422&sort=1
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="2fab5a9e8ac64e5a821b284c4d840568",
+        oauth_signature="4TRztCxFEkE1ekZMBSQJeYypp%2Fs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133549", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:05 GMT
+      server:
+      - Apache
+      x-node:
+      - web29, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.038366825126956883,"longitude_delta":0.010012054443365059},"center":{"latitude":40.679360765966806,"longitude":-99.085048675537109}},"total":40,"businesses":[{"rating":3.5,"mobile_url":"http://m.yelp.com/biz/G7u_fsn_zUI0l3hyfcYwZg","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":7,"name":"Holiday
+      Inn Hotel Kearney","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png","url":"http://www.yelp.com/biz/holiday-inn-hotel-kearney-kearney","phone":"3082375971","snippet_text":"we
+      stay here every year (twice a  year) on our way to colorado--it has 2 waterslides
+      and a great water area for littler kids--the staff is always so nice...","image_url":"http://s3-media1.px.yelpcdn.com/bphoto/oQLL2FnboUpOdLqQ3CiaRA/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/ed03mbvGigz4DQoTNHd2hg/ms.jpg","display_phone":"+1-308-237-5971","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"holiday-inn-hotel-kearney-kearney","categories":[["Hotels","hotels"],["Venues
+      & Event Spaces","venues"]],"location":{"city":"Kearney","display_address":["110
+      Second Avenue","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["110
+      Second Avenue"],"coordinate":{"latitude":40.661921300000003,"longitude":-99.086301899999995},"state_code":"NE"}},{"rating":3.5,"mobile_url":"http://m.yelp.com/biz/bVxSBHvKn_HfOs7OGHdfSg","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":8,"name":"Skeeter
+      Barnes","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png","url":"http://www.yelp.com/biz/skeeter-barnes-kearney","phone":"3082366330","snippet_text":"I
+      really enjoyed my dinner here.  We could literally see this BBQ joint from our
+      hotel room and smell the smoked meats.  When we arrived, we sat at the bar...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/bVrBvBITCAYpDf1Z6HmmOg/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/g0aE8sh_DRiZsLOrXabLGQ/ms.jpg","display_phone":"+1-308-236-6330","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"skeeter-barnes-kearney","categories":[["Barbeque","bbq"],["American
+      (Traditional)","tradamerican"]],"location":{"city":"Kearney","display_address":["516
+      2nd Ave S","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["516
+      2nd Ave S"],"coordinate":{"latitude":40.663800199999997,"longitude":-99.086947800000004},"state_code":"NE"}},{"rating":2.0,"mobile_url":"http://m.yelp.com/biz/uQ1bGSs9RaFyLXMao0o9FQ","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163489049252/img/ico/stars/stars_2.png","review_count":4,"name":"Grandpa''s
+      Steak House","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012164278297776/img/ico/stars/stars_small_2.png","url":"http://www.yelp.com/biz/grandpas-steak-house-kearney","phone":"3082372882","snippet_text":"Like
+      a beacon in the night, we made a bee-line for the pink neon \"GRANPA''S\" on
+      our 600 plus mile last day to Omaha or bust roadtrip last October.  \n\nHuge...","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/6XmvdZgsuLUeYOihGuSMOg/ms.jpg","display_phone":"+1-308-237-2882","rating_img_url_large":"http://media2.px.yelpcdn.com/static/20101216220207235/img/ico/stars/stars_large_2.png","id":"grandpas-steak-house-kearney","categories":[["Steakhouses","steak"]],"location":{"city":"Kearney","display_address":["13
+      S Central Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["13
+      S Central Ave"],"coordinate":{"latitude":40.667355899999997,"longitude":-99.082515799999996},"state_code":"NE"}},{"rating":1.0,"mobile_url":"http://m.yelp.com/biz/Do_vEwUI6uQXXHF0TDdvPw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162480304591/img/ico/stars/stars_1.png","review_count":1,"name":"Ruby
+      Tuesday","rating_img_url_small":"http://media3.px.yelpcdn.com/static/20101216926385439/img/ico/stars/stars_small_1.png","url":"http://www.yelp.com/biz/ruby-tuesday-kearney","phone":"3082342500","snippet_text":"If
+      i had the option I would give this place negative stars due to the cook.\n\nLacey
+      always orders her food with no condiments on her meals. She asked for a...","location":{"city":"Kearney","display_address":["108
+      1st Avenue Pl","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["108
+      1st Avenue Pl"],"coordinate":{"latitude":40.670414999999998,"longitude":-99.08081},"state_code":"NE"},"display_phone":"+1-308-234-2500","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012163480014692/img/ico/stars/stars_large_1.png","id":"ruby-tuesday-kearney","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/2pk9N0M3_HY-GEVaKVatuQ/ms.jpg"},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/pywdXgX71BaI2djv4VHeKg","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":5,"name":"The
+      Egg & I","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/the-egg-and-i-kearney","phone":"3083383444","snippet_text":"Hikers
+      Benedict was very tasty and the coffee was surprisingly good too... plus free
+      wifi\n\nDefinitely recommended for breakfast","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/J9SrNmbQBXLMbtFXuEfFyQ/ms.jpg","location":{"city":"Kearney","display_address":["14
+      St & 2 Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["14
+      St & 2 Ave"],"coordinate":{"latitude":40.671669000000001,"longitude":-99.086190999999999},"state_code":"NE"},"display_phone":"+1-308-338-3444","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"the-egg-and-i-kearney","snippet_image_url":"http://media3.px.yelpcdn.com/static/201012161986305257/img/gfx/blank_user_medium.gif"},{"rating":2.5,"mobile_url":"http://m.yelp.com/biz/kRLDd7miC4mNhnurtzmDiA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164170501445/img/ico/stars/stars_2_half.png","review_count":7,"name":"Venue
+      Restaurant & Lounge","rating_img_url_small":"http://media2.px.yelpcdn.com/static/201012161936943100/img/ico/stars/stars_small_2_half.png","url":"http://www.yelp.com/biz/venue-restaurant-and-lounge-kearney","phone":"3082368368","snippet_text":"Average
+      food and over-rated, in my opinion.","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/kne1dVopfLDnQ8BDVGxqaA/ms.jpg","display_phone":"+1-308-236-8368","rating_img_url_large":"http://media4.px.yelpcdn.com/static/201012161709603397/img/ico/stars/stars_large_2_half.png","id":"venue-restaurant-and-lounge-kearney","categories":[["American
+      (Traditional)","tradamerican"]],"location":{"city":"Kearney","display_address":["110
+      2nd Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["110
+      2nd Ave"],"coordinate":{"latitude":40.672765599999998,"longitude":-99.086011099999993},"state_code":"NE"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/c69gQ5qkUEtBy3J2-8cvjw","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":4,"name":"Bourbon
+      Street Blues","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/bourbon-street-blues-kearney","phone":"3082373141","snippet_text":"Food
+      was a 5 of a 5! The menu was extensive, about 5 pages long, everything looked
+      delightful and interesting. Coconut peanut shrimp appetizer was...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/MPh_mVe8jK4JrunbOmMt2Q/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/x5OITD2ssO3i7i4guVg_AQ/ms.jpg","display_phone":"+1-308-237-3141","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"bourbon-street-blues-kearney","categories":[["Seafood","seafood"]],"location":{"city":"Kearney","display_address":["301
+      2nd Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["301
+      2nd Ave"],"coordinate":{"latitude":40.674868199999999,"longitude":-99.085321699999994},"state_code":"NE"}},{"rating":2.5,"mobile_url":"http://m.yelp.com/biz/t9OG1YFJqtXFDotl5i6T0w","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164170501445/img/ico/stars/stars_2_half.png","review_count":9,"name":"Ramada
+      Inn & Conference Center","rating_img_url_small":"http://media2.px.yelpcdn.com/static/201012161936943100/img/ico/stars/stars_small_2_half.png","url":"http://www.yelp.com/biz/ramada-inn-and-conference-center-kearney","phone":"3082373141","snippet_text":"I
+      wish I''d had a camera this morning walking from my hotel room to the lobby.
+      Since I didn''t, and a picture is worth a 1000 words, I won''t spoil the...","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/57FdJZRif_oMiYp1BUPOVQ/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/qDaMTV0nG5oZJ3mdrx692A/ms.jpg","display_phone":"+1-308-237-3141","rating_img_url_large":"http://media4.px.yelpcdn.com/static/201012161709603397/img/ico/stars/stars_large_2_half.png","id":"ramada-inn-and-conference-center-kearney","categories":[["Hotels","hotels"],["Restaurants","restaurants"]],"location":{"city":"Kearney","display_address":["301
+      2nd Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["301
+      2nd Ave"],"coordinate":{"latitude":40.675098419189503,"longitude":-99.085502624511705},"state_code":"NE"}},{"rating":3.0,"mobile_url":"http://m.yelp.com/biz/IjvPH7-8tBqt4SF0rw3L5Q","rating_img_url":"http://media1.px.yelpcdn.com/static/201012161694360749/img/ico/stars/stars_3.png","review_count":6,"name":"Whiskey
+      Creek Wood Fire Grill","rating_img_url_small":"http://media1.px.yelpcdn.com/static/201012162337205794/img/ico/stars/stars_small_3.png","url":"http://www.yelp.com/biz/whiskey-creek-wood-fire-grill-kearney","phone":"3082374300","snippet_text":"I
+      honestly don''t know what experience the other yelpers had when coming here.   I
+      was staying just down the street at the Holiday Inn, and thought I would...","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/_PEctzALToqvklNyUMSzTA/ms.jpg","display_phone":"+1-308-237-4300","rating_img_url_large":"http://media3.px.yelpcdn.com/static/201012161053250406/img/ico/stars/stars_large_3.png","id":"whiskey-creek-wood-fire-grill-kearney","categories":[["Steakhouses","steak"],["Barbeque","bbq"]],"location":{"city":"Kearney","display_address":["407
+      2nd Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["407
+      2nd Ave"],"coordinate":{"latitude":40.676498413085902,"longitude":-99.085098266601605},"state_code":"NE"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/Kz5glh5bkxWrILYzumePow","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":2,"name":"Big
+      Apple Fun Center","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/big-apple-fun-center-kearney","phone":"3082344545","snippet_text":"For
+      entertainment this is as good as it gets in K-town.  Liquor, check. Pool, bowling,
+      and other ways to hurt and amuse yourself while drinking, check....","image_url":"http://s3-media3.px.yelpcdn.com/bphoto/45e7XppnNd-WJjKtJXQDfA/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/CdEdkHMK7bpszPOE46f43w/ms.jpg","display_phone":"+1-308-234-4545","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"big-apple-fun-center-kearney","categories":[["Amusement
+      Parks","amusementparks"],["Nightlife","nightlife"],["Bowling","bowling"]],"location":{"city":"Kearney","display_address":["500
+      W 4th St","Kearney, NE 68845"],"geo_accuracy":8,"postal_code":"68845","country_code":"US","address":["500
+      W 4th St"],"coordinate":{"latitude":40.6781005859375,"longitude":-99.089599609375},"state_code":"NE"}},{"rating":3.5,"mobile_url":"http://m.yelp.com/biz/ySVvP2tIwUdo2-2EfYa7QQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":3,"name":"Perkins
+      Restaurant & Bakery","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png","url":"http://www.yelp.com/biz/perkins-restaurant-and-bakery-kearney","phone":"3082347375","snippet_text":"If
+      you like Denny''s then you will enjoy here. It is relatively quiet, offers a
+      55+ discount. You get your very own pot of coffee to refill as much as you...","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/L8fXRowLJhIE2tvCg5jdZg/ms.jpg","display_phone":"+1-308-234-7375","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"perkins-restaurant-and-bakery-kearney","categories":[["Bakeries","bakeries"]],"location":{"city":"Kearney","display_address":["609
+      2nd Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["609
+      2nd Ave"],"coordinate":{"latitude":40.679401397705099,"longitude":-99.084899902343807},"state_code":"NE"}},{"rating":3.0,"mobile_url":"http://m.yelp.com/biz/a2GB6HCsSQ9ZHj0NhZZpmQ","rating_img_url":"http://media1.px.yelpcdn.com/static/201012161694360749/img/ico/stars/stars_3.png","review_count":1,"name":"Red
+      Lobster","rating_img_url_small":"http://media1.px.yelpcdn.com/static/201012162337205794/img/ico/stars/stars_small_3.png","url":"http://www.yelp.com/biz/red-lobster-kearney","phone":"3082375805","snippet_text":"the
+      cheese biscuits at red lobster are considered a delicacy among members of my
+      family. something we can all agree tastes delicious. even my littlest...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/w6XHp-bt9DJ5dgV_i_-bmg/ms.jpg","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/544p1cA-y19BBcNLKeiwWg/ms.jpg","display_phone":"+1-308-237-5805","rating_img_url_large":"http://media3.px.yelpcdn.com/static/201012161053250406/img/ico/stars/stars_large_3.png","id":"red-lobster-kearney","categories":[["Seafood","seafood"]],"location":{"city":"Kearney","display_address":["121
+      2nd Ave E","Kearney, NE 68847"],"geo_accuracy":6,"postal_code":"68847","country_code":"US","address":["121
+      2nd Ave E"],"coordinate":{"latitude":40.681427900000003,"longitude":-99.084392899999997},"state_code":"NE"}},{"rating":3.5,"mobile_url":"http://m.yelp.com/biz/hGHXzlDJpC7bgQP0adXntw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":4,"name":"Runza
+      Restuarant","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png","url":"http://www.yelp.com/biz/runza-restuarant-kearney","phone":"3082349800","snippet_text":"I
+      have no idea if anyone outside of Nebraska would find a Runza desirable.  Or
+      even edible. But I do know that any visit to my home town MUST include a...","snippet_image_url":"http://s3-media1.px.yelpcdn.com/photo/A-IzjYCFYZnPakIBKoNIQA/ms.jpg","display_phone":"+1-308-234-9800","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"runza-restuarant-kearney","categories":[["Fast
+      Food","hotdogs"]],"location":{"city":"Kearney","display_address":["815 2nd Ave","Kearney,
+      NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["815
+      2nd Ave"],"coordinate":{"latitude":40.682098388671903,"longitude":-99.084800720214801},"state_code":"NE"}},{"rating":5.0,"mobile_url":"http://m.yelp.com/biz/5auG-AJQlRDEoOpfcOxWAw","rating_img_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","review_count":1,"name":"Burger
+      King","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","url":"http://www.yelp.com/biz/burger-king-kearney-4","phone":"3082345101","snippet_text":"Free
+      Wi-Fi and a HUGE playground for the kids - plus great food and friendly service","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/9Nc0TQHfNERcQjsOdaU6-w/ms.jpg","display_phone":"+1-308-234-5101","rating_img_url_large":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"burger-king-kearney-4","categories":[["Fast
+      Food","hotdogs"]],"location":{"city":"Kearney","display_address":["802 3rd Ave","Kearney,
+      NE 68845"],"geo_accuracy":8,"postal_code":"68845","country_code":"US","address":["802
+      3rd Ave"],"coordinate":{"latitude":40.681895300000001,"longitude":-99.085756900000007},"state_code":"NE"}},{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/Gb5PkAaRmJxI0vZoqgtZ8A","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":17,"name":"Wild
+      Rice Thai Cuisine","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/wild-rice-thai-cuisine-kearney","phone":"3083388002","snippet_text":"Traditional
+      Thai cuisine in Kearney?!?!  This place is great, so is their counterpart at
+      Suwanee Thai...seriously, if you enjoy thai curry, the green in...","image_url":"http://s3-media4.px.yelpcdn.com/bphoto/FSiawQMRUyMzdO8zxzSX1A/ms.jpg","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/dKt-5xdryLtiscmy84ZvGw/ms.jpg","display_phone":"+1-308-338-8002","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"wild-rice-thai-cuisine-kearney","categories":[["Thai","thai"]],"location":{"city":"Kearney","display_address":["105
+      W 11th St","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["105
+      W 11th St"],"coordinate":{"latitude":40.6850162,"longitude":-99.083403399999995},"state_code":"NE"}},{"rating":3.5,"mobile_url":"http://m.yelp.com/biz/UIymqV8Xrh66rQXFZL8nHQ","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":3,"name":"King''s
+      Buffet","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png","url":"http://www.yelp.com/biz/kings-buffet-kearney","phone":"3082362055","snippet_text":"Very
+      good selection on lunch buffet. Good quality food items.","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/kne1dVopfLDnQ8BDVGxqaA/ms.jpg","display_phone":"+1-308-236-2055","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"kings-buffet-kearney","categories":[["Restaurants","restaurants"]],"location":{"city":"Kearney","display_address":["1115
+      2nd Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["1115
+      2nd Ave"],"coordinate":{"latitude":40.685298919677699,"longitude":-99.084701538085895},"state_code":"NE"}},{"rating":3.0,"mobile_url":"http://m.yelp.com/biz/kjrMNBtdfD8qKuyWNwz4Jg","rating_img_url":"http://media1.px.yelpcdn.com/static/201012161694360749/img/ico/stars/stars_3.png","review_count":1,"name":"Kearney
+      Liquors Inc","rating_img_url_small":"http://media1.px.yelpcdn.com/static/201012162337205794/img/ico/stars/stars_small_3.png","url":"http://www.yelp.com/biz/kearney-liquors-inc-kearney","phone":"3082342771","snippet_text":"those
+      summers i spent in nebraska as a youth sure woulda been better spent if i coulda
+      bought some liquor.\n\nsigh...","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/544p1cA-y19BBcNLKeiwWg/ms.jpg","display_phone":"+1-308-234-2771","rating_img_url_large":"http://media3.px.yelpcdn.com/static/201012161053250406/img/ico/stars/stars_large_3.png","id":"kearney-liquors-inc-kearney","categories":[["Beer,
+      Wine & Spirits","beer_and_wine"]],"location":{"city":"Kearney","display_address":["1107
+      2nd Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["1107
+      2nd Ave"],"coordinate":{"latitude":40.685298919677699,"longitude":-99.084701538085895},"state_code":"NE"}},{"rating":3.5,"mobile_url":"http://m.yelp.com/biz/rJjGwF3X0oRKwWdBhVxnbg","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":3,"name":"Gourmet
+      House Japanese Cuisine","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png","url":"http://www.yelp.com/biz/gourmet-house-japanese-cuisine-kearney","phone":"3083388077","snippet_text":"Great
+      food. Also,Delivery for u lazy people","snippet_image_url":"http://s3-media2.px.yelpcdn.com/photo/NhgMgNXlb-t20TRItmpSeA/ms.jpg","display_phone":"+1-308-338-8077","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"gourmet-house-japanese-cuisine-kearney","categories":[["Japanese","japanese"]],"location":{"city":"Kearney","display_address":["1325
+      2nd Ave Ste D","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["1325
+      2nd Ave Ste D"],"coordinate":{"latitude":40.687486999999997,"longitude":-99.084408999999994},"state_code":"NE"}},{"rating":3.5,"mobile_url":"http://m.yelp.com/biz/f5dYilmVBlxZI0Z6K1fB-w","rating_img_url":"http://media3.px.yelpcdn.com/static/201012161235323114/img/ico/stars/stars_3_half.png","review_count":4,"name":"Alley
+      Rose","rating_img_url_small":"http://media3.px.yelpcdn.com/static/201012163952475669/img/ico/stars/stars_small_3_half.png","url":"http://www.yelp.com/biz/alley-rose-kearney","phone":"3082341261","snippet_text":"Good
+      food.","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/kne1dVopfLDnQ8BDVGxqaA/ms.jpg","display_phone":"+1-308-234-1261","rating_img_url_large":"http://media1.px.yelpcdn.com/static/201012161161255655/img/ico/stars/stars_large_3_half.png","id":"alley-rose-kearney","categories":[["Restaurants","restaurants"]],"location":{"city":"Kearney","display_address":["2013
+      Central Ave","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["2013
+      Central Ave"],"coordinate":{"latitude":40.695201873779297,"longitude":-99.081901550292997},"state_code":"NE"}},{"rating":4.0,"mobile_url":"http://m.yelp.com/biz/uMmsL7DfTHzBeA_dsaGjWA","rating_img_url":"http://media2.px.yelpcdn.com/static/201012164084228337/img/ico/stars/stars_4.png","review_count":5,"name":"The
+      Chicken Coop Sports Bar & Grill","rating_img_url_small":"http://media2.px.yelpcdn.com/static/20101216418129184/img/ico/stars/stars_small_4.png","url":"http://www.yelp.com/biz/the-chicken-coop-sports-bar-and-grill-kearney","phone":"3083388500","snippet_text":"Really
+      good food items. A favorite.","snippet_image_url":"http://s3-media4.px.yelpcdn.com/photo/kne1dVopfLDnQ8BDVGxqaA/ms.jpg","display_phone":"+1-308-338-8500","rating_img_url_large":"http://media4.px.yelpcdn.com/static/20101216169592178/img/ico/stars/stars_large_4.png","id":"the-chicken-coop-sports-bar-and-grill-kearney","categories":[["Restaurants","restaurants"]],"location":{"city":"Kearney","display_address":["2115
+      Avenue A","Kearney, NE 68847"],"geo_accuracy":8,"postal_code":"68847","country_code":"US","address":["2115
+      Avenue A"],"coordinate":{"latitude":40.696800231933601,"longitude":-99.080497741699205},"state_code":"NE"}}]}'
+    http_version: '1.1'

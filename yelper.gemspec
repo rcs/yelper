@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "aruba"
   s.add_development_dependency "rspec"
   s.add_development_dependency "simplecov"
-  s.add_development_dependency "awesome_print"
+  s.add_development_dependency "vcr"
   if RUBY_PLATFORM.downcase.include?("darwin")
     s.add_development_dependency "guard"
     s.add_development_dependency "growl"

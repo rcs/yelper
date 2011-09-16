@@ -1,0 +1,81 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/business/yelp-san-francisco
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="consumer_key", oauth_nonce="695fa8f5300b114c83775e5c2d79b82b",
+        oauth_signature="9LkoukIEK%2Fhsl1ud1kOp6oM%2BrdU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133544", oauth_token="token", oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 403
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:39:00 GMT
+      server:
+      - Apache
+      x-node:
+      - web28, api_com
+      content-type:
+      - application/json
+      content-length:
+      - '87'
+      cache-control:
+      - no-cache
+      pragma:
+      - no-cache
+      vary:
+      - User-Agent
+      x-proxied:
+      - lb1
+    body: ! '{"error":{"text":"The OAuth consumer key is invalid","id":"INVALID_OAUTH_CREDENTIALS"}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="consumer_key", oauth_nonce="0e14c0ed2ebd6f1ff0e48358221a45ba",
+        oauth_signature="xkwf3QmK7NAa02ywBZPyCYhE8pI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316133726", oauth_token="token", oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 301
+      message: !!null 
+    headers:
+      date:
+      - Fri, 16 Sep 2011 00:42:02 GMT
+      server:
+      - Apache
+      x-node:
+      - web36, api_com
+      location:
+      - http://api.yelp.com/v2/
+      content-length:
+      - '231'
+      content-type:
+      - text/html; charset=iso-8859-1
+      x-proxied:
+      - lb2
+    body: ! '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+      <html><head>
+
+      <title>301 Moved Permanently</title>
+
+      </head><body>
+
+      <h1>Moved Permanently</h1>
+
+      <p>The document has moved <a href="http://api.yelp.com/v2/">here</a>.</p>
+
+      </body></html>
+
+'
+    http_version: '1.1'

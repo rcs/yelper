@@ -1,5 +1,7 @@
 require './spec/spec_helper.rb'
 require 'yelper'
+require 'json'
+require 'faraday'
 
 describe Yelper do
   before(:all) do
@@ -21,17 +23,27 @@ describe Yelper do
       Yelper.new(@config).should_not be_nil
     end
   end
+
+  describe "For debugging" do
+    it "Should include connection debugging when debug = true" do
+      yelper = Yelper.new @config.merge :debug => 1
+      yelper.connection.builder.handlers.include?(Faraday::Response::Logger).should be_true
+    end
+
+  end
   describe "For authentication" do
     it "Should raise an error on incorrect auth" do
       expect {
-        Yelper.new(@config).business "yelp-san-francisco"
+        YelperHelper.add_vcr(Yelper.new(@config)) do |c|
+          c.name "bad-auth"
+        end.business "yelp-san-francisco"
       }.to raise_error Faraday::Error::ClientError, /403/
     end
   end
   describe "After authentication" do
-    describe "basic search"
     before(:all) do
       @yelper = Yelper.new YelperHelper.auth_from_env
+      YelperHelper::add_vcr(@yelper)
       @ll = [37.788022,-122.399797]
     end
     it ".business" do
@@ -67,11 +79,23 @@ describe Yelper do
       (res.businesses[0].location.coordinate.longitude - @ll[1]).abs.should < 1
     end
 
+    it ".search :ll arguments" do 
+      expect {
+        res = @yelper.search :ll => "non-array-args", :term => 'food', :limit => 1
+      }.to raise_error ArgumentError, /Lat-long pair required for ll/
+    end
+
     it ".search :ll :sort => :distance" do
       first = @yelper.search :ll => @ll, :term => 'food', :sort => :distance, :limit => 1
       # Set to min here because Yelp fails with offset > 999, or >39 for distance
       last = @yelper.search :ll => @ll, :term => 'food', :sort => :distance, :limit => 1, :offset  => [first.total,39].min
       first.businesses[0].distance.should < last.businesses[0].distance
+    end
+
+    it ".search :ll :sort arguments" do
+      expect {
+        @yelper.search :ll => @ll, :term => 'food', :sort => :not_a_search_type, :limit => 1
+      }.to raise_error ArgumentError, /Unknown sort/
     end
 
     it ".search :category_filter" do
@@ -92,18 +116,38 @@ describe Yelper do
 
     it ".search :bounds" do
       bounds = [[37.900000,-122.500000],[37.788022,-122.399797]]
-      res = @yelper.search :bounds => '37.900000,-122.500000|37.788022,-122.399797'
+
+      res = @yelper.search :term => 'food', :bounds => bounds, :limit => 3
       res.businesses.length.should >= 1
       res.businesses.select do |business|
-        business.location.coordinate.latitude > bounds[0][0] and
-        business.location.coordinate.latitude < bounds[1][0] and
-        business.location.coordinate.longitude > bounds[0][1] and
-        business.location.coordinate.longitude > bounds[0][1]
+        business.location.coordinate.latitude.between? bounds[1][0], bounds[0][0] and
+        business.location.coordinate.longitude.between? bounds[0][1], bounds[1][1]
       end.length.should == res.businesses.length
     end
 
+    it ".search :bounds arguments" do
+      expect {
+        res = @yelper.search :term => 'food', :bounds => [1,2], :limit => 3
+      }.to raise_error ArgumentError, /Pair of lat-long pairs required/
+      expect {
+        res = @yelper.search :term => 'food', :bounds => "not-an-array", :limit => 3
+      }.to raise_error ArgumentError, /Pair of lat-long pairs required/
+    end
 
+    it ".search :cll" do
+      cll = [40.511278, -101.020422]
+      # Hayes by default matches to Hayes, FL
+      res = @yelper.search :term => 'food', :location => 'Hayes', :cll => cll, :sort => :distance
 
+      # 2 instead of 1, as it's a hint to the geocoder
+      (res.businesses[0].location.coordinate.latitude - cll[0]).abs.should < 2
+      (res.businesses[0].location.coordinate.longitude - cll[1]).abs.should < 2
+    end
+    it ".search .cll arguments" do 
+      expect {
+        res = @yelper.search :term => 'food', :location => 'Hayes', :cll => "not-an-array", :sort => :distance
+      }.to raise_error ArgumentError, /Lat-long pair required for cll/
+    end
 
   end
 end
