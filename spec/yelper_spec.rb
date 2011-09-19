@@ -1,6 +1,5 @@
 require './spec/spec_helper.rb'
 require 'yelper'
-require 'json'
 require 'faraday'
 
 describe Yelper do
@@ -20,7 +19,7 @@ describe Yelper do
     end
 
     it "Should instantiate with configuration" do
-      Yelper.new(@config).should_not be_nil
+      Yelper.new(@config).should be_an_instance_of Yelper
     end
   end
 
@@ -60,6 +59,15 @@ describe Yelper do
       res = @yelper.search :term => 'food', :location => 'San Francisco'
       res.businesses.length.should >= 1
     end
+
+    it ".search returns Yelper::Businesses, with yelper set" do
+      res = @yelper.search :term => 'food', :location => 'San Francisco', :limit => 3
+      res.businesses.each do |b|
+        b.should be_an_instance_of Yelper::Business
+        b.instance_variable_get('@yelper').should == @yelper
+      end
+    end
+
 
     it ".search :limit" do
       res = @yelper.search :term => 'food', :location => 'San Francisco', :limit => 3

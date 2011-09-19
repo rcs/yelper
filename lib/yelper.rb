@@ -7,7 +7,7 @@ class Yelper
 
   autoload :Business, 'yelper/business'
 
-  SORT_TYPE = { 
+  SORT_TYPE = {
       :best => 0,
       :distance => 1,
       :rating => 2
@@ -15,7 +15,7 @@ class Yelper
 
   AUTH_PARAMS = [ :consumer_key, :consumer_secret, :token, :token_secret ]
 
-  attr_accessor :connection, :debug
+  attr_accessor :connection
 
   def initialize( config = {} )
 
@@ -49,7 +49,7 @@ class Yelper
   end
 
   def search( options )
-    connection.get do |r|
+    res = connection.get do |r|
       r.url '/v2/search', Hash[ options.collect do |k,v|
         case k
         when :category_filter
@@ -77,16 +77,26 @@ class Yelper
               raise ArgumentError, "Unknown sort type \"#{v}\""
             end
           end
-        else 
+        else
           [k,v]
         end
       end]
     end.body
+
+    res.businesses.map! do |b|
+      Yelper::Business.new b do |y|
+        y.yelper = self
+      end
+    end
+
+    res
   end
 
   def business( id ) 
-    connection.get do |r|
-      r.url "/v2/business/#{id}"
-    end.body
+    Yelper::Business.new( connection.get do |r|
+        r.url "/v2/business/#{id}"
+    end.body) do |y|
+      y.yelper = self
+    end
   end
 end

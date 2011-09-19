@@ -1,0 +1,86 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?term=food&location=San%20Francisco&limit=1
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="30a90cf3de9beb95e5b51c1c619329cb",
+        oauth_signature="OsvLGyEkyr3CpeWal0KisFA1JtM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316400860", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Mon, 19 Sep 2011 02:54:06 GMT
+      server:
+      - Apache
+      x-node:
+      - web2, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: ! '{"region":{"span":{"latitude_delta":0.0,"longitude_delta":0.0},"center":{"latitude":37.805774999999997,"longitude":-122.420558}},"total":10366,"businesses":[{"rating":4.5,"mobile_url":"http://m.yelp.com/biz/WavvLdfdP6g8aZTtbBQHTw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":2768,"name":"Gary
+      Danko","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/gary-danko-san-francisco","phone":"4157492060","snippet_text":"MY
+      ratings are based on the over all expectations and experience\nFive stars for
+      the service, I expect nothing less.\nThe atmosphere of the room was enjoyable...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/lansxaYjxNSWAEuDSUl-NA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/4-jrjT085IDoHs1_xNg8EQ/ms.jpg","display_phone":"+1-415-749-2060","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"gary-danko-san-francisco","categories":[["American
+      (New)","newamerican"]],"location":{"city":"San Francisco","display_address":["800
+      N Point St","Fisherman''s Wharf","San Francisco, CA 94109"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94109","country_code":"US","address":["800 N Point St"],"coordinate":{"latitude":37.805774999999997,"longitude":-122.420558},"state_code":"CA"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/business/gary-danko-san-francisco
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="k0ClAzShR8Q2HppwMbRKDw", oauth_nonce="3a506ab6d7b5f9c146602cbc6fadc060",
+        oauth_signature="qc7FUxnak5l8rLXfySaZvgpZ6Vw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1316400921", oauth_token="7AXCRw4jjj0vmaH8d32B_7Byl0NJHZCI",
+        oauth_version="1.0"
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: !!null 
+    headers:
+      date:
+      - Mon, 19 Sep 2011 02:55:07 GMT
+      server:
+      - Apache
+      x-node:
+      - web41, api_com
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb1
+    body: ! '{"is_claimed":true,"rating":4.5,"mobile_url":"http://m.yelp.com/biz/WavvLdfdP6g8aZTtbBQHTw","rating_img_url":"http://media4.px.yelpcdn.com/static/201012163106483837/img/ico/stars/stars_4_half.png","review_count":2768,"name":"Gary
+      Danko","rating_img_url_small":"http://media4.px.yelpcdn.com/static/201012161127761206/img/ico/stars/stars_small_4_half.png","url":"http://www.yelp.com/biz/gary-danko-san-francisco","is_closed":false,"reviews":[{"rating":5,"excerpt":"A
+      great dining experience - I would make a special trip to San Fran just to eat
+      here - the food and service was wonderful - wish there was one in Chicago!!","time_created":1316380799,"rating_image_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","rating_image_small_url":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","user":{"image_url":"http://media3.px.yelpcdn.com/static/201012161986305257/img/gfx/blank_user_medium.gif","id":"KmSJRadiPEeDgv5v78kYwA","name":"Stephanie
+      M."},"rating_image_large_url":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"XtVozbj4QzZ33kU4OnGfcw"},{"rating":5,"excerpt":"MY
+      ratings are based on the over all expectations and experience\nFive stars for
+      the service, I expect nothing less.\nThe atmosphere of the room was enjoyable...","time_created":1316356376,"rating_image_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","rating_image_small_url":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","user":{"image_url":"http://s3-media3.px.yelpcdn.com/photo/4-jrjT085IDoHs1_xNg8EQ/ms.jpg","id":"yr0geT6Lk9XUpzGxLJNg1g","name":"Captain
+      P."},"rating_image_large_url":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"SxN8y7WYJDWIrm5-x3daEw"},{"rating":5,"excerpt":"I
+      have been wanting to go here fora while and finally had the chance when I decided
+      to take my fiance here for his 35th birthday. It lived up the hype,...","time_created":1316281211,"rating_image_url":"http://media3.px.yelpcdn.com/static/201012162578611207/img/ico/stars/stars_5.png","rating_image_small_url":"http://media3.px.yelpcdn.com/static/201012161949604803/img/ico/stars/stars_small_5.png","user":{"image_url":"http://s3-media4.px.yelpcdn.com/photo/8bHn9J2A72-NLkAS5w1Wog/ms.jpg","id":"uXSr99oEVALh7IUuq_SkSg","name":"Kara
+      B."},"rating_image_large_url":"http://media1.px.yelpcdn.com/static/20101216354709277/img/ico/stars/stars_large_5.png","id":"Srgvsl8MIJdlVshVpAOQHg"}],"phone":"4157492060","snippet_text":"MY
+      ratings are based on the over all expectations and experience\nFive stars for
+      the service, I expect nothing less.\nThe atmosphere of the room was enjoyable...","image_url":"http://s3-media2.px.yelpcdn.com/bphoto/lansxaYjxNSWAEuDSUl-NA/ms.jpg","snippet_image_url":"http://s3-media3.px.yelpcdn.com/photo/4-jrjT085IDoHs1_xNg8EQ/ms.jpg","display_phone":"+1-415-749-2060","rating_img_url_large":"http://media2.px.yelpcdn.com/static/201012162752244354/img/ico/stars/stars_large_4_half.png","id":"gary-danko-san-francisco","categories":[["American
+      (New)","newamerican"]],"location":{"city":"San Francisco","display_address":["800
+      N Point St","Fisherman''s Wharf","San Francisco, CA 94109"],"geo_accuracy":8,"neighborhoods":["Fisherman''s
+      Wharf"],"postal_code":"94109","country_code":"US","address":["800 N Point St"],"coordinate":{"latitude":37.805774999999997,"longitude":-122.420558},"state_code":"CA"}}'
+    http_version: '1.1'

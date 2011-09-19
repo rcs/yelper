@@ -1,6 +1,10 @@
+# Coverage check
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do 
+  add_filter "/spec/"
+end if ENV['COVERAGE']
 
+# HTTP connection stubbing
 require 'vcr'
 VCR.config do |c|
   c.cassette_library_dir = 'fixtures/vcr_cassettes'
@@ -8,13 +12,9 @@ VCR.config do |c|
   c.default_cassette_options = { :record => :new_episodes }
 end
 
-require 'rspec'
-RSpec.configure do |c|
-    c.extend VCR::RSpec::Macros
-end
-
 require 'yelper'
 module YelperHelper
+  # Pull authentication from the environment to give to Yelper
   def self.auth_from_env
     params = Yelper::AUTH_PARAMS
     env_params = Hash[*params.collect { |p| [p, "YELPER_#{p.to_s.upcase}"] }.flatten ]
@@ -25,9 +25,10 @@ module YelperHelper
     auth.reject {|k,v| v.nil? }
   end
 
+  # Mess with the connection to shove in the connection stubbing
   def self.add_vcr(yelper)
     yelper.connection.builder.insert_before Faraday::Adapter::NetHttp, VCR::Middleware::Faraday do |c,env|
-      c.name    env[:url].path.sub(/^\//, '')
+      c.name env[:url].path.sub(/^\//, '')
       yield c if block_given?
     end
     yelper
